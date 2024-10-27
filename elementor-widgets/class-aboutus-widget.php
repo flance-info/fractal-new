@@ -55,7 +55,6 @@ class Aboutus_Widget extends FractalBaseElementor {
 						],
 				]
 		);
-
 		// Heading Two
 		$this->add_control(
 				'heading_two',
@@ -69,8 +68,6 @@ class Aboutus_Widget extends FractalBaseElementor {
 						],
 				]
 		);
-
-
 		$this->end_controls_section();
 		// Content Section: Description
 		$this->start_controls_section(
@@ -80,7 +77,6 @@ class Aboutus_Widget extends FractalBaseElementor {
 						'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
 				]
 		);
-
 		// Paragraph One (WYSIWYG)
 		$this->add_control(
 				'paragraph_one',
@@ -94,9 +90,6 @@ class Aboutus_Widget extends FractalBaseElementor {
 						],
 				]
 		);
-
-
-
 		// Paragraph Two (WYSIWYG)
 		$this->add_control(
 				'paragraph_two',
@@ -150,17 +143,17 @@ class Aboutus_Widget extends FractalBaseElementor {
 				]
 		);
 		$this->end_controls_section();
-$this->register_section_styles();
-			$this->register_typography_controls( 'heading_one', 'Label', '.heading-one', 'div' );
+		$this->register_section_styles();
+		$this->register_typography_controls( 'heading_one', 'Label', '.heading-one', 'div' );
 		$this->register_typography_controls( 'heading_two', 'Heading', '.heading-two', 'h2' );
-	$this->register_typography_controls( 'paragraph_one', 'Paragraph one', '.paragraph_one', 'div' );
+		$this->register_typography_controls( 'paragraph_one', 'Paragraph one', '.paragraph_one', 'div' );
 		$this->register_typography_controls( 'paragraph_two', 'Paragraph two', '.paragraph_two', 'div' );
-$this->register_universal_style_controls(
-			'side_img',                   // Section ID
-			'Side Image',                 // Section Label
-			'.side-img',                  // CSS Selector
-			0,                            // Default Left Position
-			''                           // Default Width in %
+		$this->register_universal_style_controls(
+				'side_img',                   // Section ID
+				'Side Image',                 // Section Label
+				'.side-img',                  // CSS Selector
+				0,                            // Default Left Position
+				''                           // Default Width in %
 		);
 	}
 
@@ -206,18 +199,21 @@ $this->register_universal_style_controls(
 					<div class="flex-1 flex flex-col items-start justify-start gap-[30px] pl-[75px] pt-[95px] mq925:pl-0 mq925:pt-[40px]">
 
 						<!-- Heading One -->
-					<div class="self-stretch relative tracking-[0.25em] leading-[22px] uppercase text-general-1-primary heading-one elementor-inline-editing" {{{ view.getRenderAttributeString(	'heading_one' ) }}}>
+						<div class="self-stretch relative tracking-[0.25em] leading-[22px] uppercase text-general-1-primary heading-one elementor-inline-editing" {{{ view.getRenderAttributeString(
+						'heading_one' ) }}}>
 						{{{ settings.heading_one }}}
 					</div>
 
 					<!-- Heading Two -->
 					<{{{ settings.heading_two_html_tag }}} class="self-stretch relative text-59xl tracking-[-0.04em] leading-[84px] text-general-white mq925:text-41xl heading-two elementor-inline-editing" {{{ view.getRenderAttributeString( 'heading_two' ) }}}>
 					{{{ settings.heading_two }}}
-				</{{{ settings.heading_two_html_tag }}}>
+				</
+				{{{ settings.heading_two_html_tag }}}>
 
 				<!-- Paragraph One -->
 				<div class="self-stretch relative text-5xl tracking-[-0.01em] leading-[30px] font-medium text-general-white
-				paragraph_one elementor-inline-editing " {{{ view.getRenderAttributeString('paragraph_one' ) }}}>
+				paragraph_one elementor-inline-editing " {{{ view.getRenderAttributeString(
+				'paragraph_one' ) }}}>
 				{{{ settings.paragraph_one }}}
 		</div>
 
