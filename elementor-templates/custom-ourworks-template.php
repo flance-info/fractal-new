@@ -7,6 +7,12 @@ $heading_html_tag = $settings['heading_html_tag'];
 $this->add_inline_editing_attributes( 'label', 'none' );
 $this->add_inline_editing_attributes( 'heading', 'none' );
 $work_title_tag = $settings['work_title_tag'];
+
+$arrow_image_url       = $settings['icon_image']['url'] ?? \Elementor\Utils::get_placeholder_image_src();
+$arrow_image_hover_url = $settings['icon_image_moved']['url'] ?? \Elementor\Utils::get_placeholder_image_src();
+$arrow_image_label = $settings['icon_label'] ?? 'read more';
+
+$icon_type = $settings['icon_type'] ?? '';
 ?>
 
 <div class="w-full">
@@ -37,18 +43,27 @@ $work_title_tag = $settings['work_title_tag'];
 			<div class="work-description w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out work_description">
 				<?php echo esc_html( $work['work_description'] ); ?>
 			</div>
-			<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+			<?php
+
+
+
+			$post_link = esc_url($work['work_link']['url'] ); ?>
+			<a <?php $this->get_link_attributes( $icon_type, $post_link ) ?> class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
 
 
 				<div class="arrow-container">
-					<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+					<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]"><?php echo esc_html( 	$arrow_image_label ); ?></span>
 					<div class="circle">
-						<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-						<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+
+				<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_url ); ?>">
+					<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_hover_url ) ?>">
+
+
 					</div>
 
 				</div>
-			</div>
+			</a>
 		</div>
 	</div>
 </div>
@@ -73,17 +88,20 @@ $work_title_tag = $settings['work_title_tag'];
 			<div class="work-description w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out work_description">
 				<?php echo esc_html( $work['work_description'] ); ?>
 			</div>
-			<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+			<?php 		$post_link = esc_url($work['work_link']['url'] ); ?>
+			<a <?php $this->get_link_attributes( $icon_type, $post_link ) ?> class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
 
 				<div class="arrow-container">
-					<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+					<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]"><?php echo esc_html( 	$arrow_image_label ); ?></span>
 					<div class="circle">
-						<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-						<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_url ); ?>">
+					<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_hover_url ) ?>">
 					</div>
 
 				</div>
-			</div>
+			</a>
 		</div>
 	</div>
 </div>

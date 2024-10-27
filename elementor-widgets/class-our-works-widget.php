@@ -1,5 +1,6 @@
 <?php
 
+use Elementor\Basic\FractalBaseElementor;
 use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 use Elementor\Group_Control_Typography;
 
@@ -7,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-class OurWorks_Widget extends \Elementor\Widget_Base {
+class OurWorks_Widget extends FractalBaseElementor {
 
 	public function get_name() {
 		return 'ourworks';
@@ -175,6 +176,18 @@ class OurWorks_Widget extends \Elementor\Widget_Base {
 						'label_block' => true,
 				]
 		);
+
+		$repeater->add_control(
+				"work_link",
+				[
+						'label'       => __( "Work Link", 'fractal' ),
+						'type'        => \Elementor\Controls_Manager::URL,
+						'default'     => [
+					'url' => '#',
+				],
+
+				]
+		);
 		$repeater->add_control(
 				'work_description',
 				[
@@ -246,6 +259,11 @@ class OurWorks_Widget extends \Elementor\Widget_Base {
 				]
 		);
 		$this->end_controls_section();
+		$this->register_icon_arrow_controls(
+				get_template_directory_uri() . '/fractal/build/navigation2.webp',
+				get_template_directory_uri() . '/fractal/build/moved-arrow.webp',
+				'FULL CASE STUDY',
+		);
 	}
 
 	protected function render() {
@@ -256,77 +274,5 @@ class OurWorks_Widget extends \Elementor\Widget_Base {
 		include get_stylesheet_directory() . '/elementor-templates/custom-ourworks-template.php';
 	}
 
-	protected function _content_template() {
-		?>
 
-    <div class="w-full">
-        <section class="self-stretch overflow-hidden flex flex-col items-start justify-center text-17xl">
-            <div class="self-stretch bg-general-1-secondary flex flex-col items-center justify-center pt-[140px] px-0 pb-[60px] gap-[30px] text-center text-base text-general-1-primary">
-                <div class="relative tracking-[0.25em] leading-[22px] uppercase label elementor-inline-editing" data-elementor-setting-key="label" data-elementor-inline-editing-toolbar="none">
-                    {{{ settings.label }}}
-                </div>
-                <{{{ settings.heading_html_tag }}} class="relative text-59xl tracking-[-0.04em] leading-[84px] text-general-white heading elementor-inline-editing" data-elementor-setting-key="heading" data-elementor-inline-editing-toolbar="none">
-                    {{{ settings.heading }}}
-                </{{{ settings.heading_html_tag }}}>
-            </div>
-
-            <div class="self-stretch flex flex-row items-center justify-start text-general-white mq925:flex-col mq925:self-stretch mq925:h-[2000px]">
-                <# _.each( settings.works_list, function( work, index ) { if ( index > 3 ) { return; } #>
-                <div class="work-item flex-1 relative h-[480px] bg-cover bg-no-repeat bg-[top] mq925:w-full" style="background-image: url('{{{ work.work_image.url }}}');">
-                    <div class="bg-gradient-hover h-full">
-                        <div class="absolute h-full w-full top-[780px] right-[0px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
-                        <div class="absolute w-[calc(100%_-_80px)] right-[40px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
-                            <{{{ settings.work_title_tag }}} class="work_title text-17xl self-stretch relative tracking-[-0.01em] leading-[42px] fade-out h-100 work_title">
-                                {{{ work.work_title }}}
-                            </{{{ settings.work_title_tag }}}>
-                            <div class="work-description w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11 fade-out work_description">
-                                {{{ work.work_description }}}
-                            </div>
-                            <div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
-                                <div class="arrow-container">
-                                    <span class="text tracking-[0.25em] leading-[22px] uppercase z-[1]">FULL CASE STUDY</span>
-                                    <div class="circle">
-                                        <img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-                                        <img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <# }); #>
-            </div>
-
-            <div class="self-stretch flex flex-row items-center justify-start text-general-white mq925:flex-col mq925:self-stretch mq925:h-[2000px]">
-                <# _.each( settings.works_list, function( work, index ) { if ( index < 4 ) { return; } #>
-                <div class="work-item flex-1 relative h-[480px] bg-cover bg-no-repeat bg-[top] mq925:w-full" style="background-image: url('{{{ work.work_image.url }}}');">
-                    <div class="bg-gradient-hover h-full">
-                        <div class="absolute h-full w-full top-[780px] right-[0px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
-                        <div class="absolute w-[calc(100%_-_80px)] right-[40px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
-                            <{{{ settings.work_title_tag }}} class="work_title text-17xl self-stretch relative tracking-[-0.01em] leading-[42px] fade-out h-100 work_title">
-                                {{{ work.work_title }}}
-                            </{{{ settings.work_title_tag }}}>
-                            <div class="work-description w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11 fade-out work_description">
-                                {{{ work.work_description }}}
-                            </div>
-                            <div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
-                                <div class="arrow-container">
-                                    <span class="text tracking-[0.25em] leading-[22px] uppercase z-[1]">FULL CASE STUDY</span>
-                                    <div class="circle">
-                                        <img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-                                        <img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <# }); #>
-            </div>
-        </section>
-    </div>
-
-
-		<?php
-	}
 }

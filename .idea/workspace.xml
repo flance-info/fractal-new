@@ -5,9 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-templates/custom-aboutus-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-templates/custom-aboutus-template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-templates/custom-ourservices-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-templates/custom-ourservices-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementor-templates/custom-ourworks-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-templates/custom-ourworks-template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-widgets/class-aboutus-widget.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-widgets/class-aboutus-widget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-widgets/class-fractal-base-elementor.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-widgets/class-fractal-base-elementor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-widgets/class-our-services-widget.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-widgets/class-our-services-widget.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementor-widgets/class-our-works-widget.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-widgets/class-our-works-widget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-widgets/class-why-choose-widget.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-widgets/class-why-choose-widget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fractal/build/main_elementor.js" beforeDir="false" afterPath="$PROJECT_DIR$/fractal/build/main_elementor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -108,7 +110,7 @@
       <workItem from="1729680927593" duration="9210000" />
       <workItem from="1729766787199" duration="6552000" />
       <workItem from="1729844349160" duration="28264000" />
-      <workItem from="1729923011210" duration="41091000" />
+      <workItem from="1729923011210" duration="42388000" />
     </task>
     <servers />
   </component>
