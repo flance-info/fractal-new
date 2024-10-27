@@ -49,6 +49,8 @@ $icon_type = $settings['icon_type'] ?? '';
 				<div class="circle">
 					<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_url ); ?>">
 					<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_hover_url ) ?>">
+
+
 				</div>
 
 			</div>

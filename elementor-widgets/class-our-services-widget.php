@@ -1,5 +1,6 @@
 <?php
 
+use Elementor\Basic\FractalBaseElementor;
 use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 use Elementor\Group_Control_Typography;
 
@@ -7,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-class OurServices_Widget extends \Elementor\Widget_Base {
+class OurServices_Widget extends FractalBaseElementor {
 
 	public function get_name() {
 		return 'ourservices';
@@ -235,6 +236,12 @@ class OurServices_Widget extends \Elementor\Widget_Base {
 		for ( $i = 1; $i <= 4; $i ++ ) {
 			$this->register_service_controls( $i, $default_values[ $i ] );
 		}
+
+		$this->register_icon_arrow_controls(
+				get_template_directory_uri() . '/fractal/build/navigation2.webp',
+				get_template_directory_uri() . '/fractal/build/orange_nav.webp',
+				'Learn more',
+		);
 	}
 
 	protected function register_service_controls( $service_number, $defaults ) {
@@ -253,6 +260,17 @@ class OurServices_Widget extends \Elementor\Widget_Base {
 						'type'        => \Elementor\Controls_Manager::TEXT,
 						'default'     => __( $defaults['title'], 'fractal' ),
 						'label_block' => true,
+				]
+		);
+		$this->add_control(
+				"service_{$service_number}_link",
+				[
+						'label'       => __( "Service {$service_number} Link", 'fractal' ),
+						'type'        => \Elementor\Controls_Manager::URL,
+						'default'     => [
+					'url' => '#',
+				],
+
 				]
 		);
 		// Typography Group Control for Title
@@ -354,6 +372,7 @@ class OurServices_Widget extends \Elementor\Widget_Base {
 		for ( $i = 1; $i <= 4; $i ++ ) {
 			$services[ $i ] = [
 					'title'       => $settings["service_{$i}_title"],
+					'link'       => $settings["service_{$i}_link"],
 					'bg_image'    => ! empty( $settings["service_{$i}_bg_image"]['url'] ) ? esc_url( $settings["service_{$i}_bg_image"]['url'] ) : '',
 					'paragraph_1' => $settings["service_{$i}_paragraph_1"],
 					'paragraph_2' => $settings["service_{$i}_paragraph_2"],
@@ -385,156 +404,6 @@ class OurServices_Widget extends \Elementor\Widget_Base {
 		</div>
 		<?php
 	}
-
-	protected function content_template() {
-    ?>
-    <#
-    // Helper function to render services
-    function renderService(i) {
-        var title = settings['service_' + i + '_title'];
-        var paragraph_1 = settings['service_' + i + '_paragraph_1'];
-        var paragraph_2 = settings['service_' + i + '_paragraph_2'];
-        var bg_image = settings['service_' + i + '_bg_image'].url ? settings['service_' + i + '_bg_image'].url : '';
-		var title_tag   = settings['service_' + i + '_title_tag'];
-
-        // Add inline editing attributes
-        view.addInlineEditingAttributes('service_' + i + '_title', 'none');
-        view.addInlineEditingAttributes('service_' + i + '_paragraph_1', 'advanced');
-        view.addInlineEditingAttributes('service_' + i + '_paragraph_2', 'advanced');
-
-        // Output HTML for the service
-        return `<${title_tag} class="self-stretch relative tracking-[-0.02em] leading-[54px] font-medium service-${i}-title elementor-inline-editing" ${view.getRenderAttributeString('service_' + i + '_title')}>
-                    ${title}
-                </${title_tag}>
-                <div class="self-stretch relative text-5xl tracking-[-0.01em] leading-[30px] font-medium text-general-1-secondary-variant service-${i}-paragraph-1 elementor-inline-editing" ${view.getRenderAttributeString('service_' + i + '_paragraph_1')}>
-                    ${paragraph_1}
-                </div>
-                <div class="self-stretch relative text-base leading-[26px] font-body-b6-merriweather-11 text-elements-neutral service-${i}-paragraph-2 elementor-inline-editing" ${view.getRenderAttributeString('service_' + i + '_paragraph_2')}>
-                    ${paragraph_2}
-                </div>
-        `;
-    }
-
-		 function renderImage(i) {
-
-        var bg_image = settings['service_' + i + '_bg_image'].url ? settings['service_' + i + '_bg_image'].url : '';
-
-
-
-        // Output HTML for the service
-        return ` style="background-image: url('${bg_image}');" `;
-    }
-
-    // Add inline editing attributes for general labels and headings
-    view.addInlineEditingAttributes('label_one', 'none');
-    view.addInlineEditingAttributes('heading', 'none');
-    #>
-
-    <div class="w-full">
-        <section class="self-stretch bg-elements-neutral-4 flex flex-col items-center justify-center py-[140px] gap-[80px] text-general-1-secondary mq925:px-[25px]">
-            <div class="w-full max-w-[1170px] flex flex-col gap-[100px]">
-                <div class="max-w-[991px] w-full flex flex-col items-center justify-start text-center text-general-1-primary mb-[-45px]">
-                    <!-- Label -->
-                    <div class="self-stretch relative tracking-[0.25em] leading-[22px] uppercase elementor-inline-editing" {{{ view.getRenderAttributeString('label_one') }}}>
-                        {{{ settings.label_one }}}
-                    </div>
-
-                    <!-- Heading -->
-                    <{{{ settings.heading_html_tag }}} class="self-stretch relative text-59xl tracking-[-0.04em] leading-[20px] text-general-1-secondary font-medium my-[64px] mq925:leading-[70px] mq925:my-[30px] heading elementor-inline-editing" {{{ view.getRenderAttributeString('heading') }}}>
-                        {{{ settings.heading }}}
-                    </{{{ settings.heading_html_tag }}}>
-                </div>
-
-
-		<div class="self-stretch flex flex-row items-center justify-start gap-[60px] text-29xl mq925:flex-col">
-			<div class="flex-1 flex flex-col items-start justify-start gap-[30px]">
-				 {{{ renderService(1) }}}
-
-			</div>
-			<div class="flex-[0.8559] mq925:w-full mq925:min-h-[664px] h-[664px] flex flex-col items-end justify-end p-10 box-border gap-2.5  bg-cover bg-no-repeat bg-[top] text-right text-base text-general-white"  {{{ renderImage(1) }}} >
-				<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
-
-
-					<div class="notrans arrow-container">
-						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Learn more</span>
-						<div class="circle">
-							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-							<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/orange_nav.webp">
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="self-stretch flex flex-row items-center justify-start gap-[60px] text-right text-general-white mq925:flex-col">
-
-			<div class="flex-[0.8559] mq925:w-full mq925:min-h-[664px]  h-[664px] flex flex-col items-end justify-end p-10 box-border gap-2.5  bg-cover bg-no-repeat bg-[top]"  {{{ renderImage(2) }}} >
-
-				<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
-
-
-					<div class="notrans arrow-container">
-						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Learn more</span>
-						<div class="circle">
-							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-							<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/orange_nav.webp">
-						</div>
-
-					</div>
-				</div>
-
-
-			</div>
-			<div class="flex-1 flex flex-col items-start justify-start gap-[30px] text-left text-29xl text-general-1-secondary">
-				 {{{ renderService(2) }}}
-			</div>
-		</div>
-		<div class="self-stretch flex flex-row items-center justify-start gap-[60px] text-29xl mq925:flex-col">
-			<div class="flex-1 flex flex-col items-start justify-start gap-[30px]">
-				{{{ renderService(3) }}}
-			</div>
-			<div class="flex-[0.8559] mq925:w-full mq925:min-h-[664px]  h-[664px] flex flex-col items-end justify-end p-10 box-border gap-2.5 bg-cover bg-no-repeat bg-[top] text-right text-base text-general-white"  {{{ renderImage(3) }}} >
-				<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
-
-
-					<div class="notrans arrow-container">
-						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Learn more</span>
-						<div class="circle">
-							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-							<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/orange_nav.webp">
-						</div>
-
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-		<div class="self-stretch flex flex-row items-center justify-start gap-[60px] text-right text-general-white mq925:flex-col">
-
-			<div class="self-stretch flex-[0.8559] mq925:w-full mq925:min-h-[664px]  flex flex-col items-end justify-end p-10 gap-2.5  bg-cover bg-no-repeat bg-[top]"  {{{ renderImage(4) }}} >
-				<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
-
-
-					<div class="notrans arrow-container">
-						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Learn more</span>
-						<div class="circle">
-							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-							<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/orange_nav.webp">
-						</div>
-
-					</div>
-				</div>
-			</div>
-			<div class="flex-1 flex flex-col items-start justify-start gap-[30px] text-left text-29xl text-general-1-secondary">
-				{{{ renderService(4) }}}
-			</div>
-		</div>
-            </div>
-        </section>
-    </div>
-    <?php
-}
 
 
 }

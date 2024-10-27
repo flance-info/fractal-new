@@ -3,6 +3,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+$arrow_image_url       = $settings['icon_image']['url'] ?? \Elementor\Utils::get_placeholder_image_src();
+$arrow_image_hover_url = $settings['icon_image_moved']['url'] ?? \Elementor\Utils::get_placeholder_image_src();
+$arrow_image_label = $settings['icon_label'] ?? 'read more';
+
+$icon_type = $settings['icon_type'] ?? '';
 ?>
 
 <div class="w-full">
@@ -22,21 +27,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="flex-1 flex flex-col items-start justify-start gap-[30px]">
 				<?php $this->render_service( $services[1], 1 );
 				$bg_image = $services[1]['bg_image'];
+$post_link = $services[1]['link']['url'];
 				?>
 			</div>
 			<div class="flex-[0.8559] mq925:w-full mq925:min-h-[664px] h-[664px] flex flex-col items-end justify-end p-10 box-border gap-2.5  bg-cover bg-no-repeat bg-[top] text-right text-base text-general-white" style="background-image: url('<?php echo esc_url( $bg_image ); ?>');">
-				<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+				<a <?php $this->get_link_attributes( $icon_type, $post_link ) ?> class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
 
 
 					<div class="notrans arrow-container">
-						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Learn more</span>
+						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]"><?php echo esc_html( 	$arrow_image_label ); ?></span>
 						<div class="circle">
-							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-							<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/orange_nav.webp">
+							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_url ); ?>">
+					<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_hover_url ) ?>">
+
+
 						</div>
 
 					</div>
-				</div>
+				</a>
 
 
 			</div>
@@ -44,19 +52,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="self-stretch flex flex-row items-center justify-start gap-[60px] text-right text-general-white mq925:flex-col">
 			<?php $bg_image = $services[2]['bg_image']; ?>
 			<div class="flex-[0.8559] mq925:w-full mq925:min-h-[664px]  h-[664px] flex flex-col items-end justify-end p-10 box-border gap-2.5  bg-cover bg-no-repeat bg-[top]" style="background-image: url('<?php echo esc_url( $bg_image ); ?>');">
-
-				<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
-
-
+				<?php $post_link = $services[2]['link']['url']; ?>
+				<a <?php $this->get_link_attributes( $icon_type, $post_link ) ?> class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
 					<div class="notrans arrow-container">
-						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Learn more</span>
+						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]"><?php echo esc_html( 	$arrow_image_label ); ?></span>
 						<div class="circle">
-							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-							<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/orange_nav.webp">
+							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_url ); ?>">
+					<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_hover_url ) ?>">
+
+
 						</div>
 
 					</div>
-				</div>
+				</a>
 
 
 			</div>
@@ -73,18 +81,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 				?>
 			</div>
 			<div class="flex-[0.8559] mq925:w-full mq925:min-h-[664px]  h-[664px] flex flex-col items-end justify-end p-10 box-border gap-2.5 bg-cover bg-no-repeat bg-[top] text-right text-base text-general-white" style="background-image: url('<?php echo esc_url( $bg_image ); ?>');">
-				<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+				<?php $post_link = $services[3]['link']['url']; ?>
+
+
+				<a <?php $this->get_link_attributes( $icon_type, $post_link ) ?> class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
 
 
 					<div class="notrans arrow-container">
-						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Learn more</span>
+						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]"><?php echo esc_html( 	$arrow_image_label ); ?></span>
 						<div class="circle">
-							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-							<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/orange_nav.webp">
+							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_url ); ?>">
+					<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_hover_url ) ?>">
+
+
 						</div>
 
 					</div>
-				</div>
+				</a>
 
 
 			</div>
@@ -94,18 +107,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 			$bg_image = $services[4]['bg_image'];
 			?>
 			<div class="self-stretch flex-[0.8559] mq925:w-full mq925:min-h-[664px]  flex flex-col items-end justify-end p-10 gap-2.5  bg-cover bg-no-repeat bg-[top]" style="background-image: url('<?php echo esc_url( $bg_image ); ?>');">
-				<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+					<?php $post_link = $services[4]['link']['url']; ?>
+
+				<a <?php $this->get_link_attributes( $icon_type, $post_link ) ?> class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
 
 
 					<div class="notrans arrow-container">
-						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Learn more</span>
+						<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]"><?php echo esc_html( 	$arrow_image_label ); ?></span>
 						<div class="circle">
-							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-							<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/orange_nav.webp">
+							<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_url ); ?>">
+					<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_hover_url ) ?>">
+
+
 						</div>
 
 					</div>
-				</div>
+				</a>
 			</div>
 			<div class="flex-1 flex flex-col items-start justify-start gap-[30px] text-left text-29xl text-general-1-secondary">
 				<?php $this->render_service( $services[4], 4 ); ?>
