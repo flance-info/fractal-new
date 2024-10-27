@@ -53,12 +53,8 @@ $description_tag = $settings['description_html_tag'] ?? 'div';
 		$post_url             = $post['post_link']['url'] ?? "#";
 		?>
 		<div class="flex-1 overflow-hidden flex flex-col items-start justify-start gap-[30px] min-w-[277px] max-w-full  stm-hover-box">
-			<div class=" stm-img self-stretch flex flex-row items-start justify-start max-w-full">
-				<img decoding="async" class=" stm-m-img  h-60 flex-1 relative
-					max-w-full overflow-hidden object-cover  side-img" loading="lazy" alt="" src="<?php echo esc_url( $post_image_url ); ?>">
-				<img decoding="async" class="h-60 flex-1 relative max-w-full
-					overflow-hidden object-cover stm-h-img  side-img" alt="" src="<?php echo esc_url( $post_image_hover_url ); ?>">
-
+			<div class="stm-img img-gradient-hover-wrapper self-stretch flex flex-row items-start justify-start max-w-full">
+				<img decoding="async" class="img-gradient-hover h-60 flex-1 relative max-w-full overflow-hidden object-cover side-img" loading="lazy" alt="" src="<?php echo esc_url( $post_image_url ); ?>">
 			</div>
 			<div class="self-stretch overflow-hidden flex flex-row items-start justify-start gap-[50px] max-w-full text-base text-general-1-secondary-variant mq450:gap-[25px]">
 				<a href="<?php echo esc_url( $post_url ); ?>" class="flex-1 flex flex-col items-start justify-start gap-5 max-w-full text-5xl">
@@ -71,7 +67,7 @@ $description_tag = $settings['description_html_tag'] ?? 'div';
 
 				<<?php echo esc_attr( $description_tag ); ?> class="relative text-base leading-[26px]
 				font-body-b4-merriweather-13 text-elements-neutral description">
-				<?php echo  $post['post_description'] ; ?>
+				<?php echo $post['post_description']; ?>
 			</<?php echo esc_attr( $description_tag ); ?>>
 			</a>
 		</div>
@@ -88,14 +84,10 @@ $description_tag = $settings['description_html_tag'] ?? 'div';
 	$post_image_hover_url = $post['post_image_hover']['url'] ?? \Elementor\Utils::get_placeholder_image_src();
 	?>
 
-	<div class="flex-1 overflow-hidden flex flex-col items-start justify-start gap-[30px] min-w-[277px] max-w-full  stm-hover-box max-w-370" >
-		<div class=" stm-img self-stretch flex flex-row items-start justify-start max-w-full">
-			<img decoding="async" class=" stm-m-img  h-60 flex-1 relative
-					max-w-full overflow-hidden object-cover  side-img" loading="lazy" alt="" src="<?php echo esc_url( $post_image_url ); ?>">
-			<img decoding="async" class="h-60 flex-1 relative max-w-full
-					overflow-hidden object-cover stm-h-img  side-img" alt="" src="<?php echo esc_url( $post_image_hover_url ); ?>">
-
-		</div>
+	<div class="flex-1 overflow-hidden flex flex-col items-start justify-start gap-[30px] min-w-[277px] max-w-full  stm-hover-box max-w-370">
+		<div class="stm-img img-gradient-hover-wrapper self-stretch flex flex-row items-start justify-start max-w-full">
+				<img decoding="async" class="img-gradient-hover h-60 flex-1 relative max-w-full overflow-hidden object-cover side-img" loading="lazy" alt="" src="<?php echo esc_url( $post_image_url ); ?>">
+			</div>
 		<div class="self-stretch overflow-hidden flex flex-row items-start justify-start gap-[50px] max-w-full text-base text-general-1-secondary-variant mq450:gap-[25px]">
 			<a href="<?php echo esc_url( $post_url ); ?>" class="flex-1 flex flex-col items-start justify-start gap-5 max-w-full text-5xl">
 

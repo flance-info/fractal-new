@@ -4,8 +4,10 @@
     <list default="true" id="eac9696c-c73a-4697-af13-e1e2516f85aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-templates/custom-aboutus-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-templates/custom-aboutus-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementor-templates/custom-latestblogs-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-templates/custom-latestblogs-template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-templates/custom-ourservices-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-templates/custom-ourservices-template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-templates/custom-ourworks-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-templates/custom-ourworks-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementor-templates/custom-services-interior-design-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-templates/custom-services-interior-design-template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-widgets/class-aboutus-widget.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-widgets/class-aboutus-widget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-widgets/class-fractal-base-elementor.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-widgets/class-fractal-base-elementor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-widgets/class-our-services-widget.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-widgets/class-our-services-widget.php" afterDir="false" />
@@ -110,7 +112,7 @@
       <workItem from="1729680927593" duration="9210000" />
       <workItem from="1729766787199" duration="6552000" />
       <workItem from="1729844349160" duration="28264000" />
-      <workItem from="1729923011210" duration="42388000" />
+      <workItem from="1729923011210" duration="45811000" />
     </task>
     <servers />
   </component>

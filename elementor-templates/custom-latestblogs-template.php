@@ -70,8 +70,10 @@ $arrow_image_hover_url = $settings['icon_image_moved']['url'] ?? \Elementor\Util
 
 
 			<div class="self-stretch relative h-60 stm-img">
-				<img class="absolute h-full w-full top-0 right-0 bottom-0 left-0 max-w-full overflow-hidden max-h-full object-cover stm-m-img" alt="" src="<?php echo esc_url( $post_image_url ); ?>">
-				<img class="absolute h-full w-full top-0 right-0 bottom-0 left-0 max-w-full overflow-hidden max-h-full object-cover stm-h-img" alt="" src="<?php echo esc_url( $post_image_hover_url ); ?>">
+				<div class="absolute inset-0 bg-gradient-hover z-[100]"></div>
+				<img class="absolute h-full w-full top-0 right-0 bottom-0 left-0 max-w-full overflow-hidden max-h-full object-cover " alt="" src="<?php echo esc_url( $post_image_url ); ?>">
+
+				<img class="absolute h-full w-full top-0 right-0 bottom-0 left-0 max-w-full overflow-hidden max-h-full object-cover hidden" alt="" src="<?php echo esc_url( $post_image_hover_url ); ?>">
 
 				<div class="absolute top-[20px] left-[20px] bg-general-1-primary flex flex-row items-center justify-center py-[3px] px-2 text-white">
 					<div class="stm-date relative leading-[20px]" <?php echo $this->get_render_attribute_string( 'post_date' ); ?>>
