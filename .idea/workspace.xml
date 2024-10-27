@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eac9696c-c73a-4697-af13-e1e2516f85aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elementor-templates/custom-aboutus-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-templates/custom-aboutus-template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-templates/custom-whychoose-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-templates/custom-whychoose-template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-widgets/class-aboutus-widget.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-widgets/class-aboutus-widget.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elementor-widgets/class-why-choose-widget.php" beforeDir="false" afterPath="$PROJECT_DIR$/elementor-widgets/class-why-choose-widget.php" afterDir="false" />
@@ -106,7 +107,7 @@
       <workItem from="1729680927593" duration="9210000" />
       <workItem from="1729766787199" duration="6552000" />
       <workItem from="1729844349160" duration="28264000" />
-      <workItem from="1729923011210" duration="36741000" />
+      <workItem from="1729923011210" duration="37116000" />
     </task>
     <servers />
   </component>
