@@ -3,6 +3,13 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+
+$arrow_image_url       = $settings['icon_image']['url'] ?? \Elementor\Utils::get_placeholder_image_src();
+$arrow_image_hover_url = $settings['icon_image_moved']['url'] ?? \Elementor\Utils::get_placeholder_image_src();
+$post_link = $settings['icon_url']['url'] ?? '';
+$arrow_image_label = $settings['icon_label'] ?? 'read more';
+
+$icon_type = $settings['icon_type'] ?? '';
 ?>
 
 <div class="w-full">
@@ -34,18 +41,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php echo $paragraph_two; ?>
 		</div>
 
-		<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+		<a <?php $this->get_link_attributes( $icon_type, $post_link ) ?> class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
 
-
-			<div class="arrow-container">
-				<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Learn more</span>
+			<div class="arrow-container" >
+				<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">
+					<?php echo esc_html( 	$arrow_image_label ); ?></span>
 				<div class="circle">
-					<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
-					<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+					<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_url ); ?>">
+					<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="<?php echo esc_url( $arrow_image_hover_url ) ?>">
 				</div>
 
 			</div>
-		</div>
+		</a>
 
 
 </div>

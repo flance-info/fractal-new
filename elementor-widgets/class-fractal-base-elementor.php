@@ -116,6 +116,22 @@ abstract class FractalBaseElementor extends \Elementor\Widget_Base {
 				'description'  => __( 'Switch between a Popup Form or a URL for icon click.', 'fractal' ),
 			]
 		);
+		$this->add_control(
+			'icon_url',
+			[
+				'label'       => __( 'Icon URL', 'fractal' ),
+				'type'        => \Elementor\Controls_Manager::URL,
+				'placeholder' => __( 'https://your-link.com', 'fractal' ),
+				'default'     => [
+					'url'         => '',
+					'is_external' => true,
+					'nofollow'    => true,
+				],
+				'condition'   => [
+					'icon_type' => 'url', // Display this field only when 'icon_type' is set to 'url'
+				],
+			]
+		);
 		// Control for the default arrow icon image
 		$this->add_control(
 			'icon_image',
@@ -317,9 +333,14 @@ abstract class FractalBaseElementor extends \Elementor\Widget_Base {
 				],
 			]
 		);
-
 		$this->end_controls_section();
 	}
 
-
+	protected function get_link_attributes( $icon_type, $post_link ) {
+		if ( $icon_type !== 'url' ) {
+			echo 'onclick="openModal(event)"';
+		} else {
+			echo 'href="' . esc_url( $post_link ) . '"';
+		}
+	}
 }
