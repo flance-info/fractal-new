@@ -1,0 +1,86 @@
+/**
+ * Theme Name: Fractal
+ * Theme URI:
+ * Author: Rusty
+ * Author URI:
+ * Description:
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:fractal
+ * Version: 1.0
+ */
+
+
+.elementor-element.e-con-full.e-grid.e-con {
+    padding: 0px;
+}
+body .stm-gap-0 {
+    gap: 0px ;
+}
+.error404 .text-general-white a {
+    --tw-text-opacity: 1;
+    color: black;
+}
+
+.error404 header{
+    margin-bottom: 0px;
+}
+
+.error404 .text-general-white button a {
+    --tw-text-opacity: 1;
+    color: #fff;
+}
+
+.elementor {
+    width: 100%;
+}
+.wpcf7-response-output {
+    display: none;
+}
+
+.stm-margin-top {
+        margin-top: -15px;
+    }
+a.stm-gray:hover {
+    color: gray;
+}
+
+.elementor img.no-el {
+  height: unset;
+   max-width: unset;
+
+}
+
+body .elementor img {
+    height: inherit;
+    max-width: inherit;
+
+}
+body
+.elementor-widget:not(:last-child) {
+    margin-bottom: inherit;
+}
+
+body
+.max-w-370{
+    max-width: 370px;
+}
+
+body .elementor .slides img {
+
+    max-width: unset;
+}
+@media (max-width: 925px) {
+    body .stm-margin-top {
+        margin-top: 130px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    body
+    .elementor-949 .elementor-element.elementor-element-25f122c {
+        --e-con-grid-template-columns: repeat(1, 1fr);
+        --e-con-grid-template-rows: unset;
+        --grid-auto-flow: row;
+    }
+}

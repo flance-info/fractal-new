@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width">
+
+	<link rel="stylesheet" href="global.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400;500;700&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@700&display=swap">
+
+	<style>@font-face {
+		font-family: Eudoxus Sans;
+		src: url("EudoxusSans-Regular-BF659b6cb1d4714.ttf");
+		font-weight: 400;
+	}
+	</style>
+
+	<script src="/wp-content/themes/fractal/fractal/build/main.js" defer=""></script>
+</head> <!-- Include the head component -->
+
+<body>
+<div class="w-full relative bg-general-white overflow-hidden
+      flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
+	<header class="box-border flex flex-row gap-[275px] items-start justify-center max-w-full mb-[-150px] mq1400:gap-[137px] mq450:gap-[34px] mq925:gap-[69px] px-5 py-[39px]
+self-stretch z-[1] mq925:justify-between mq925:px-[25px]">
+
+		<div class="flex flex-row items-center justify-start">
+
+			<a href="https://fractal-new.test/" class="starter-logo">
+				<img class="h-[62px] relative w-[169.4px] stm-logo-white" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/logotype.webp">
+
+
+			</a>
+
+		</div>
+
+
+		<div class="box-border flex flex-col items-start justify-start max-w-full mq925:w-0 pb-0 pt-2 px-0 w-[725px]">
+
+			<nav class="flex flex-row font-button-space-grotesk gap-5 items-start justify-between m-0 mq925:hidden self-stretch text-base text-general-white text-right">
+
+				<div class="flex flex-col items-start justify-start pb-0 pt-3 px-0  ">
+					<a class="hover:text-general-1-primary-variant [text-decoration:none] leading-[22px] relative text-[inherit] tracking-[0.25em] uppercase " href="https://fractal-new.test/home/">
+						Home </a>
+				</div>
+
+				<div class="flex flex-col items-start justify-start pb-0 pt-3 px-0  ">
+					<a class="hover:text-general-1-primary-variant [text-decoration:none] leading-[22px] relative text-[inherit] tracking-[0.25em] uppercase " href="https://fractal-new.test/business-setup-services/">
+						Projects </a>
+				</div>
+
+
+				<div class="flex flex-col items-start justify-start pb-0 pt-3 px-0  ">
+					<a class="hover:text-general-1-primary-variant [text-decoration:none] leading-[22px] relative text-[inherit] tracking-[0.25em] uppercase " href="https://fractal-new.test/about/">
+						About </a>
+				</div>
+
+
+				<div class="flex flex-col items-start justify-start pb-0 pt-3 px-0  ">
+					<a class="hover:text-general-1-primary-variant [text-decoration:none] leading-[22px] relative text-[inherit] tracking-[0.25em] uppercase " href="https://fractal-new.test/contact/">
+						Contact </a>
+				</div>
+				<button onclick="openModal()" class="[border:none] bg-general-1-primary cursor-pointer flex flex-row gap-[15px]
+			 items-start justify-start overflow-hidden px-[15px] py-0 mbtn-prm ">
+					<div class="bg-general-1-primary-variant h-[46px] ml-[-215px] relative shrink-0 w-[200px]"></div>
+					<div class="box-border flex flex-col items-start justify-start pb-0 pt-3 px-0 w-[170px]"><a
+							class="[text-decoration:none] font-button-space-grotesk font-medium leading-[22px] relative self-stretch shrink-0 text-base text-center text-general-white">Free consultation</a></div>
+				</button>
+
+			</nav>
+
+
+		</div>
+		<div class="navigation hidden mq925:flex">
+			<div class="navigation-menu">
+				<ul class="starter-menu menu ">
+					<li id="menu-item-842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-842"><a href="https://fractal-new.test/home/">Home</a></li>
+					<li id="menu-item-465" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-465"><a href="https://fractal-new.test/business-setup-services/">Projects</a></li>
+					<li id="menu-item-464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-464"><a href="https://fractal-new.test/about/">About</a></li>
+					<li id="menu-item-467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-467"><a href="https://fractal-new.test/contact/">Contact</a></li>
+				</ul>
+
+				<div class="mobile-switcher">
+					<span></span> <span></span> <span></span>
+				</div>
+			</div>
+		</div>
+
+
+	</header>
+
+	<div class="w-full stm-margin-top">
+		<section class="self-stretch relative  h-[460px] text-left text-base text-general-1-secondary
+ font-body-b4-merriweather-13  mq925:text-white" xmlns="http://www.w3.org/1999/html">
+			<img class="absolute h-full top-[0px]  bottom-[0px] max-h-full w-full transform
+			translate-x-[50%] left-[-385px] object-cover mq925:transform-unset mq925:left-0" alt="" src="/wp-content/themes/fractal/fractal/build/luxurious-interior-with-ocean-view.webp">
+
+			<div class="w-full max-w-[1170px]  h-full mx-auto flex flex-col justify-center items-start pt-[50px] mq925:px-[25px]">
+				<div class="tracking-[0.25em] leading-[22px] uppercase font-button-space-grotesk
+				text-general-1-primary inline-block  min-h-[22px] z-[100] mb-[-30px] ">
+					Design Services
+				</div>
+				<h1 class="relative font-medium text-41xl tracking-[-0.03em] leading-[60px] font-medium font-button-space-grotesk
+				inline-block max-w-[820px] mq925:leading-[50px]">
+					Interior Design Company Services in Dubai
+				</h1>
+
+			</div>
+
+		</section>
+		<section class="self-stretch flex flex-row items-start justify-center pt-[140px]
+		pb-[140px] box-border max-w-full text-right text-base text-general-white
+		 font-button-space-grotesk mq925:pb-[91px] mq925:box-border mq925:px-[25px]">
+			<div class="w-[1170px] flex flex-row items-start justify-start gap-[60px] max-w-full mq1400:gap-[30px] mq1400:flex-wrap">
+
+
+				<div class="min-h-[414px] flex-[0.8559] flex flex-col items-end justify-end p-10 box-border bg-[url('/public/frame-26585@3x.png')] bg-cover bg-no-repeat bg-[top] min-w-[361px] max-w-full mq450:min-w-full mq1400:flex-1">
+					<div class="hidden flex-row items-center justify-start relative gap-4">
+						<img class="h-[70px] w-[70px] relative z-[0]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation.webp">
+
+						<div class="absolute !m-[0] top-[24px] left-[0px] tracking-[0.25em] leading-[22px] uppercase opacity-[0] whitespace-nowrap z-[1]">
+							Learn more
+						</div>
+					</div>
+				</div>
+				<div class="flex-1 flex flex-col items-start justify-start pt-[17px] px-0 pb-0 box-border min-w-[361px] max-w-full text-left text-general-1-primary mq450:min-w-full mq1400:flex-1">
+					<div class="self-stretch flex flex-col items-start justify-start gap-[30px]">
+						<div class="self-stretch relative tracking-[0.25em] leading-[22px] uppercase">
+							Expert
+						</div>
+						<h2 class="m-0 relative text-29xl tracking-[-0.02em] leading-[54px] font-medium font-[inherit] text-general-1-secondary mq450:text-10xl mq450:leading-[32px] mq925:text-19xl mq925:leading-[43px]">
+							Interior Designers in Dubai
+						</h2>
+						<div class="m-0 self-stretch relative text-5xl tracking-[-0.01em] leading-[30px] font-medium font-[inherit] text-general-1-secondary-variant mq450:text-lgi mq450:leading-[24px]">
+							Our talented interior designers in Dubai specialize in creating
+							spaces that fit your style perfectly.
+						</div>
+						<div class="relative leading-[26px] font-body-b4-merriweather-13 text-elements-neutral">
+							We take care of every detail, from the initial idea to the final
+							touches, and promise a stunning finishing that defines
+							“you”—down  to the very last detail.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="self-stretch overflow-hidden flex flex-col items-center justify-center
+		relative bg-[url('/public/slide1.png')] bg-cover bg-no-repeat bg-[top] text-23xl
+ text-general-white">
+			<h2 class="max-w-[1170px] w-full text-base tracking-[0.25em] leading-[22px]
+	uppercase inline-block z-[2] mt-[100px] mb-[-100px] h-[0px] mq925:pl-[50px] mq925:mt-[50px]">
+				Types of Interior Design Projects
+			</h2>
+			<div class="w-full self-stretch flex flex-row mq925:flex-col">
+				<div class="flex-1 relative min-h-[780px] overflow-hidden bg-gradient-hover child_el  mq925:img-slide1" data-bg="url('/wp-content/themes/fractal/fractal/build/slide1.png')">
+					<div class="absolute w-[calc(100%_-_80.3px)] right-[40.3px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
+						<h3 class="text-23xl  self-stretch relative tracking-[-0.02em] leading-[48px] font-medium fade-out h-100
+				mq925:text-11xl mq925:leading-[34px] mq925:m-0">
+							Residential Interior Design
+						</h3>
+						<div class="self-stretch relative text-lg leading-[30px] font-body-b6-merriweather-11 fade-out  mq925:text-sm mq925:leading-[24px]">
+							Our interior services help you create elegant and functional spaces in your residential home, apartment, villa, or Majlis.
+							Whether you’re redesigning a single room or an entire house,
+							our designers bring your style to life while making sure everything feels
+							comfortable and works perfectly for your daily life.
+						</div>
+						<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+							<div class="arrow-container">
+								<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+								<div class="circle">
+									<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+									<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+								</div>
+
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<div class="self-stretch w-px relative bg-general-white opacity-[0.25]"></div>
+				<div class="flex-1 relative min-h-[780px] overflow-hidden bg-gradient-hover child_el mq925:img-slide2" data-bg="url('/wp-content/themes/fractal/fractal/build/slide2.png')">
+					<div class=" h-full w-[calc(100%_-_0.3px)] top-[780px] right-[0.3px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
+					<div class="absolute w-[calc(100%_-_80.3px)] right-[40.3px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
+						<h3 class="text-23xl self-stretch relative tracking-[-0.02em] leading-[48px] font-medium  fade-out h-100 mq925:text-11xl mq925:leading-[34px] mq925:m-0">
+							Commercial Interior Design
+						</h3>
+						<div class="w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out  mq925:text-sm mq925:leading-[24px]">
+							We build machines that set the industry standard for precision
+							and durability.
+						</div>
+						<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+							<div class="arrow-container">
+								<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+								<div class="circle">
+									<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+									<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+								</div>
+
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<div class="self-stretch w-px relative bg-general-white opacity-[0.25]"></div>
+				<div class="flex-1 relative min-h-[780px] overflow-hidden bg-gradient-hover child_el mq925:img-slide3" data-bg="url('/wp-content/themes/fractal/fractal/build/slide3.png')">
+					<div class=" h-full w-[calc(100%_-_0.3px)] top-[780px] right-[0.3px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
+					<div class="absolute w-[calc(100%_-_80.3px)] right-[40.3px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
+						<h3 class="text-23xl self-stretch relative tracking-[-0.02em] leading-[48px] font-medium  fade-out h-100 mq925:text-11xl mq925:leading-[34px] mq925:m-0">
+							Hospitality Interior Design
+						</h3>
+						<div class="w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out  mq925:text-sm mq925:leading-[24px]">
+							We build machines that set the industry standard for precision
+							and durability.
+						</div>
+						<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+							<div class="arrow-container">
+								<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+								<div class="circle">
+									<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+									<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+								</div>
+
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="self-stretch bg-elements-neutral-4 overflow-hidden flex flex-row
+			items-start justify-center gap-20 max-w-full text-left text-11xl
+			 text-general-1-secondary-variant
+			 font-button-space-grotesk w-full mq925:mb-[50px] mq925:flex-col">
+			<div class="absolute h-full max-h-full w-full transform translate-x-[50%] left-[-962px] mq925:relative mq925:left-0 mq925:transform-unset">
+
+				<img class="w-[640px] relative max-h-full max-w-full flex-1 mq925:w-full" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/modern-monochrome-kitchen-with-artistic-lighting.webp">
+			</div>
+
+			<div class="max-w-[1170px] flex flex-col items-start justify-start py-[140px]
+			px-0 pb-0 box-border w-full mq925:pt-32 mq925:box-border
+			mq925:min-w-full mq1875:flex-1 pl-[350px] min-h-[1124px] mq925:px-[25px] mq925:pt-[50px] mq925:min-h-[500px] mq925:px-[25px]">
+				<div class="self-stretch flex flex-col items-start justify-start gap-[30px]">
+
+					<div class="relative text-base tracking-[0.25em] leading-[22px] uppercase text-general-1-primary hidden">
+						About Us
+					</div>
+					<h2 class="m-0 self-stretch relative text-29xl tracking-[-0.02em] leading-[54px] font-medium font-[inherit] text-general-1-secondary mq450:text-10xl mq450:leading-[32px] mq925:text-19xl mq925:leading-[43px]">
+						Why Choose Fractal Design?
+					</h2>
+					<div class="self-stretch flex flex-col items-start justify-start gap-3.5">
+						<h3 class="m-0 self-stretch relative text-inherit tracking-[-0.01em] leading-[36px] font-medium font-[inherit] mq450:text-lg mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px]">
+							Expertise in Dubai’s Interior Design Market
+						</h3>
+						<div class="relative text-base leading-[26px] font-body-b4-merriweather-13 text-elements-neutral">
+							As a leading interior design company in Dubai,  we have the best
+							designers, materials, and industry connections at our
+							fingertips—things you won’t easily find elsewhere. So, not only
+							will your design be stunning, but it’ll also come together without
+							breaking the bank.
+						</div>
+					</div>
+					<div class="self-stretch flex flex-col items-start justify-start gap-3.5">
+						<h3 class="m-0 self-stretch relative text-inherit tracking-[-0.01em] leading-[36px] font-medium font-[inherit] mq450:text-lg mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px]">
+							Comprehensive Design Services
+						</h3>
+						<div class="relative text-base leading-[26px] font-body-b4-merriweather-13 text-elements-neutral">
+							We take care of every detail, from the first sketch to the final
+							touches. Whether it’s your house, office, or villa, we handle it
+							all—space planning, material selection, and finishing—making the
+							process smooth and the results spectacular.
+						</div>
+					</div>
+					<div class="self-stretch flex flex-col items-start justify-start gap-3.5">
+						<h3 class="m-0 self-stretch relative text-inherit tracking-[-0.01em] leading-[36px] font-medium font-[inherit] mq450:text-lg mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px]">
+							Specialization in Modern Interiors
+						</h3>
+						<div class="relative text-base leading-[26px] font-body-b4-merriweather-13 text-elements-neutral">
+							We specialize in modern interiors for bedrooms, bathrooms, living
+							rooms, and Majlis. Our designs strike a fine balance of
+							contemporary style with practical solutions, creating spaces that
+							look great and are perfect for everyday living.
+						</div>
+					</div>
+					<div class="self-stretch flex flex-col items-start justify-start gap-3.5">
+						<h3 class="m-0 self-stretch relative text-inherit tracking-[-0.01em] leading-[36px] font-medium font-[inherit] mq450:text-lg mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px]">
+							Detail-Driven Designing and Decoration
+						</h3>
+						<div class="relative text-base leading-[26px] font-body-b4-merriweather-13 text-elements-neutral">
+							We emphasize detailed designing and decoration, ensuring every
+							element of your space is thoughtfully considered. Right from the
+							initial layout, all the way to the final decorative touches, our
+							meticulous approach guarantees a polished, cohesive interior that
+							meets your needs.
+						</div>
+					</div>
+					<div class="self-stretch flex flex-col items-start justify-start gap-3.5">
+						<h3 class="m-0 self-stretch relative text-inherit tracking-[-0.01em] leading-[36px] font-medium font-[inherit] mq450:text-lg mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px]">
+							Top-Quality Furniture and Finishing
+						</h3>
+						<div class="relative text-base leading-[26px] font-body-b4-merriweather-13 text-elements-neutral">
+							As one of the best interior design companies, we only work with
+							top-quality furniture and materials to ensure your interior spaces
+							are both beautiful and durable. Our commitment to quality means
+							you’ll receive a top-tier interior design and successful projects
+							that stand the test of time.
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="self-stretch overflow-hidden flex flex-col items-start justify-center text-17xl">
+			<div class="self-stretch bg-general-1-secondary flex flex-col items-center justify-center pt-[140px] px-0 pb-[60px] gap-[30px] text-center text-base text-general-1-primary">
+				<div class="relative tracking-[0.25em] leading-[22px] uppercase">
+					Our Works
+				</div>
+				<h2 class="relative text-59xl tracking-[-0.04em] leading-[84px] text-general-white">
+					Bespoke Interior Design in Dubai
+				</h2>
+
+			</div>
+			<div class="self-stretch flex flex-row items-center justify-start  text-general-white mq925:flex-col mq925:self-stretch mq925:h-[2000px]">
+				<div class="flex-1 relative h-[480px] overflow-hidden bg-[url('/public/case-studies@3x.png')] bg-cover bg-no-repeat bg-[top] mq925:w-full">
+					<div class="bg-gradient-hover h-full">
+						<div class="absolute h-full w-full top-[780px] right-[0px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
+						<div class="absolute w-[calc(100%_-_80px)] right-[40px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
+							<h3 class="text-17xl  self-stretch relative tracking-[-0.01em] leading-[42px]  fade-out h-100">
+								Architect Design
+							</h3>
+							<div class="w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out">
+								We build machines that set the industry standard for precision
+								and durability.
+							</div>
+							<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+								<div class="arrow-container">
+									<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+									<div class="circle">
+										<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+										<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="text-general-white flex-1 relative h-[480px] overflow-hidden bg-[url('/public/case-studies1@3x.png')] bg-cover bg-no-repeat bg-[top] mq925:w-full">
+					<div class="bg-gradient-hover h-full">
+						<div class="absolute h-full w-full top-[780px] right-[0px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
+						<div class="absolute w-[calc(100%_-_80px)] right-[40px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
+							<h3 class="text-17xl  self-stretch relative tracking-[-0.01em] leading-[42px]  fade-out h-100">
+								Architectural Residential Designs
+							</h3>
+							<div class="w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out">
+								We build machines that set the industry standard for precision
+								and durability.
+							</div>
+							<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+								<div class="arrow-container">
+									<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+									<div class="circle">
+										<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+										<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="flex-1 relative h-[480px] overflow-hidden bg-[url('/public/component-5@3x.png')] bg-cover bg-no-repeat bg-[top] mq925:w-full">
+					<div class="bg-gradient-hover h-full">
+						<div class="absolute h-full w-full top-[780px] right-[0px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
+						<div class="absolute w-[calc(100%_-_80px)] right-[40px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
+							<h3 class="text-17xl  self-stretch relative tracking-[-0.01em] leading-[42px]  fade-out h-100">
+								Building Designs
+							</h3>
+							<div class="w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out">
+								We build machines that set the industry standard for precision
+								and durability.
+							</div>
+							<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+								<div class="arrow-container">
+									<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+									<div class="circle">
+										<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+										<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="flex-1 relative h-[480px] overflow-hidden bg-[url('/public/twilight-reflections-on-modern-highrise@3x.png')] bg-cover bg-no-repeat bg-[top] mq925:w-full">
+					<div class="bg-gradient-hover h-full">
+						<div class="absolute h-full w-full top-[780px] right-[0px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
+						<div class="absolute w-[calc(100%_-_80px)] right-[40px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
+							<h3 class="text-17xl  self-stretch relative tracking-[-0.01em] leading-[42px]  fade-out h-100">
+								Towers Design
+							</h3>
+							<div class="w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out">
+								We build machines that set the industry standard for precision
+								and durability.
+							</div>
+							<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+								<div class="arrow-container">
+									<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+									<div class="circle">
+										<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+										<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="self-stretch flex flex-row items-center justify-start text-general-white mq925:flex-col mq925:self-stretch mq925:h-[2000px]">
+				<div class="flex-1 relative h-[480px] overflow-hidden bg-[url('/public/case-studies2@3x.png')] bg-cover bg-no-repeat bg-[top] mq925:w-full">
+					<div class="bg-gradient-hover h-full">
+						<div class="absolute h-full w-full top-[780px] right-[0px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
+						<div class="absolute w-[calc(100%_-_80px)] right-[40px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
+							<h3 class="text-17xl  self-stretch relative tracking-[-0.01em] leading-[42px]  fade-out h-100">
+								Palaces Designs
+							</h3>
+							<div class="w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out">
+								We build machines that set the industry standard for precision
+								and durability.
+							</div>
+							<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+								<div class="arrow-container">
+									<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+									<div class="circle">
+										<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+										<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="flex-1 relative h-[480px] overflow-hidden bg-[url('/public/component-51@3x.png')] bg-cover bg-no-repeat bg-[top] mq925:w-full">
+					<div class="bg-gradient-hover h-full">
+						<div class="absolute h-full w-full top-[780px] right-[0px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
+						<div class="absolute w-[calc(100%_-_80px)] right-[40px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
+							<h3 class="text-17xl  self-stretch relative tracking-[-0.01em] leading-[42px]  fade-out h-100">
+								Villas Design
+							</h3>
+							<div class="w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out">
+								We build machines that set the industry standard for precision
+								and durability.
+							</div>
+							<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+								<div class="arrow-container">
+									<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+									<div class="circle">
+										<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+										<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="flex-1 relative h-[480px] overflow-hidden bg-[url('/public/photo-46-20240815-1209342@3x.png')] bg-cover bg-no-repeat bg-[top] mq925:w-full">
+					<div class="bg-gradient-hover h-full">
+						<div class="absolute h-full w-full top-[780px] right-[0px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
+						<div class="absolute w-[calc(100%_-_80px)] right-[40px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
+							<h3 class="text-17xl  self-stretch relative tracking-[-0.01em] leading-[42px]  fade-out h-100">
+								Architectural Commercial Designs
+							</h3>
+							<div class="w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out">
+								We build machines that set the industry standard for precision
+								and durability.
+							</div>
+							<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+								<div class="arrow-container">
+									<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+									<div class="circle">
+										<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+										<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="flex-1 relative h-[480px] overflow-hidden bg-[url('/public/component-6@3x.png')] bg-cover bg-no-repeat bg-[top] mq925:w-full">
+					<div class="bg-gradient-hover h-full">
+						<div class="absolute h-full w-full top-[780px] right-[0px] bottom-[-780px] left-[0px] bg-general-1-secondary-variant opacity-[0]"></div>
+						<div class="absolute w-[calc(100%_-_80px)] right-[40px] bottom-[41px] left-[40px] flex flex-col items-start justify-end gap-5">
+							<h3 class="text-17xl  self-stretch relative tracking-[-0.01em] leading-[42px]  fade-out h-100">
+								Malls Design
+							</h3>
+							<div class="w-[303px] relative text-lg leading-[30px] font-body-b6-merriweather-11  fade-out">
+								We build machines that set the industry standard for precision
+								and durability.
+							</div>
+							<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+								<div class="arrow-container">
+									<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">FULL CASE STUDY</span>
+									<div class="circle">
+										<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+										<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="self-stretch flex flex-row items-start justify-center
+			px-5 py-[140px] box-border max-w-full text-left text-base
+			text-general-1-primary font-button-space-grotesk mq450:py-[59px]
+			mq925:py-[91px]">
+			<div class="max-w-[1170px] flex flex-row items-start justify-start
+				gap-[60px] w-full mq1400:gap-[30px] mq1400:flex-wrap">
+				<div class="flex-1 flex flex-col items-start justify-start gap-[30px] min-w-[361px] max-w-full mq450:min-w-full mq1400:flex-1">
+					<div class="self-stretch relative tracking-[0.25em] leading-[22px] uppercase">
+						Start
+					</div>
+					<h2 class="m-0 relative text-29xl tracking-[-0.02em] leading-[54px] font-medium font-[inherit] text-general-1-secondary mq450:text-10xl mq450:leading-[32px] mq925:text-19xl mq925:leading-[43px]">
+						Your Interior Design Project with us
+					</h2>
+					<div class="m-0 relative text-5xl tracking-[-0.01em] leading-[30px] font-medium font-[inherit] text-general-1-secondary-variant mq450:text-lgi mq450:leading-[24px]">
+						Ready to bring your vision to life? Partner with Fractal, Dubai’s
+						best interior design company, and let's create spaces that truly
+						reflect your style.
+					</div>
+					<div class="relative leading-[26px] font-body-b4-merriweather-13 text-elements-neutral">
+						<p class="m-0">
+							We get it—you’ve probably seen it all: muse interior design that
+							doesn’t quite match, spaces that lack a personal touch, or
+							trends that are way past their prime. No one wants a repeat of
+							those mistakes.
+						</p>
+						<p class="m-0">&nbsp;</p>
+						<p class="m-0">
+							Even if this is your first time working with an interior design
+							company in Dubai and UAE, you deserve a smooth and enjoyable
+							experience. That’s where we come in.
+						</p>
+						<p class="m-0">&nbsp;</p>
+						<p class="m-0">
+							Our promise? We’ll help you design a beautiful, functional,
+							and personalized space you’ll love for years. Let’s work
+							together to create the home or office of your dreams.
+						</p>
+					</div>
+				</div>
+				<div class="h-[626px] flex-[0.8559] flex flex-col items-end justify-end p-10 box-border bg-[url('/public/project-description@3x.png')] bg-cover bg-no-repeat bg-[top] min-w-[361px] max-w-full text-right text-general-white mq450:min-w-full mq1400:flex-1">
+					<div class="hidden flex-row items-center justify-start relative gap-4">
+						<img class="h-[70px] w-[70px] relative z-[0]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation.webp">
+
+						<div class="absolute !m-[0] top-[24px] left-[0px] tracking-[0.25em] leading-[22px] uppercase opacity-[0] whitespace-nowrap z-[1]">
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+				class="self-stretch bg-general-1-primary flex flex-col items-center justify-start py-[140px] px-5 box-border max-w-full text-left text-base text-general-white font-headlines-h4-dm-sans-30 mq450:gap-5 mq925:gap-10 mq925:pt-[59px] mq925:pb-[59px] mq925:box-border mq1400:pt-[91px] mq1400:pb-[91px] mq1400:box-border">
+			<div class="w-[1170px] flex flex-row items-start justify-center gap-[30px] max-w-full mq1400:flex-wrap">
+				<div class="w-[270px] flex flex-row items-start justify-start pt-3 px-0 pb-0 box-border">
+					<b class="relative leading-[22px] uppercase">Questions & Answers</b>
+				</div>
+				<div class="flex-1 flex flex-col items-start justify-start gap-[72px] min-w-[565px] min-h-[872px] max-w-full text-center text-29xl font-button-space-grotesk mq925:min-w-full mq1400:min-h-[auto]">
+					<h2 class="m-0 relative text-inherit tracking-[-0.02em] leading-[54px] font-medium font-[inherit] inline-block max-w-full mq450:text-10xl mq450:leading-[32px] mq925:text-19xl mq925:leading-[43px]">
+						Frequently Asked Questions
+					</h2>
+					<div class="self-stretch flex flex-col items-start justify-start gap-[30px] max-w-full text-left text-11xl font-headlines-h4-dm-sans-30">
+						<div class="stm-faq self-stretch flex flex-row items-start justify-center py-[11px] px-0 box-border gap-2.5 max-w-full mq925:flex-wrap">
+							<div class="flex-1 flex flex-col items-start justify-start pt-1.5 px-0 pb-0 box-border gap-[26px] min-w-[528px] max-w-full mq925:min-w-[80%]">
+								<h3 class="m-0 relative text-inherit tracking-[-0.01em] leading-[36px] font-bold font-[inherit] mq450:text-lg mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px]">
+									How do I know if I need an interior design company in Dubai?
+								</h3>
+								<div class="stm-answer relative text-lg leading-[30px] font-body-b4-merriweather-13">
+									If you’re looking to create a functional, aesthetically
+									pleasing space but aren’t sure where to start, an interior
+									design company in Dubai can help. Professional interior
+									design services are essential for transforming your vision
+									into reality, whether it’s for a residential, commercial,
+									or hospitality project.
+								</div>
+							</div>
+							<img class="cursor-pointer stm-minus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconsminuscircle.webp">
+							<img class="cursor-pointer stm-plus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconspluscircle.webp">
+						</div>
+
+						<div class="stm-faq  self-stretch flex flex-row items-start justify-center py-[11px] px-0 box-border gap-2.5 max-w-full mq925:flex-wrap">
+							<div class="flex-1 flex flex-col items-start justify-start pt-1.5 px-0 pb-0 box-border gap-[26px] min-w-[528px] max-w-full mq925:min-w-[80%]">
+								<h3 class="m-0 flex-1 relative text-inherit tracking-[-0.01em] leading-[36px] font-bold font-[inherit] inline-block min-w-[404px] max-w-full mq450:text-lg mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px] mq925:min-w-full">
+									What is commercial interior design?
+								</h3>
+								<div class="stm-answer relative text-lg leading-[30px] font-body-b4-merriweather-13">
+									Commercial interior design focuses on creating functional and appealing spaces for businesses. This includes offices, retail stores, and other commercial environments. The goal is to enhance the user
+									experience,
+									reflect the brand identity, and improve productivity in the office or other residential and commercial spaces.
+								</div>
+							</div>
+							<img class="cursor-pointer stm-minus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconsminuscircle.webp">
+							<img class="cursor-pointer stm-plus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconspluscircle.webp">
+						</div>
+						<div class="stm-faq  self-stretch flex flex-row items-start justify-center py-[11px] px-0 box-border gap-2.5 max-w-full mq925:flex-wrap">
+							<div class="flex-1 flex flex-col items-start justify-start pt-1.5 px-0 pb-0 box-border gap-[26px] min-w-[528px] max-w-full mq925:min-w-[80%]">
+								<h3 class="m-0 flex-1 relative text-inherit tracking-[-0.01em] leading-[36px] font-bold font-[inherit] inline-block min-w-[515px] max-w-full mq450:text-lg mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px] mq925:min-w-full">
+									What does residential interior design include?
+								</h3>
+								<div class="stm-answer relative text-lg leading-[30px] font-body-b4-merriweather-13">
+									Residential interior design involves planning and designing living spaces such as homes, apartments, villas, and Majlis. This includes everything from creative space planning to selecting furniture,
+									lighting, and
+									finishes to create a comfortable,stylish, and luxury interior design tailored to your lifestyle.
+								</div>
+							</div>
+							<img class="cursor-pointer stm-minus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconsminuscircle.webp">
+							<img class="cursor-pointer stm-plus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconspluscircle.webp">
+						</div>
+						<div class="stm-faq self-stretch flex flex-row items-start justify-center py-[11px] px-0 box-border gap-2.5 max-w-full mq925:flex-wrap">
+							<div class="flex-1 flex flex-col items-start justify-start pt-1.5 px-0 pb-0 box-border gap-[26px] min-w-[528px] max-w-full mq925:min-w-[80%]">
+								<h3 class="m-0 flex-1 relative text-inherit tracking-[-0.01em] leading-[36px] font-bold font-[inherit] inline-block min-w-[390px] max-w-full mq450:text-lg mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px] mq925:min-w-full">
+									What is hospitality interior design?
+								</h3>
+								<div class="stm-answer relative text-lg leading-[30px] font-body-b4-merriweather-13">
+									Hospitality interior design involves creating luxurious and welcoming environments in hotels and other hospitality venues. The focus is on ensuring that every space, from the lobby to the guest rooms,
+									offers a
+									high level of comfort, style, and functionality, enhancing the overall guest experience.
+								</div>
+							</div>
+							<img class="cursor-pointer stm-minus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconsminuscircle.webp">
+							<img class="cursor-pointer stm-plus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconspluscircle.webp">
+						</div>
+						<div class="stm-faq self-stretch flex flex-row items-start justify-center py-[11px] px-0 box-border gap-2.5 max-w-full mq925:flex-wrap">
+							<div class="flex-1 flex flex-col items-start justify-start pt-1.5 px-0 pb-0 box-border gap-[26px] min-w-[528px] max-w-full mq925:min-w-[80%]">
+								<h3 class="m-0 flex-1 relative text-inherit tracking-[-0.01em] leading-[36px] font-bold font-[inherit] inline-block min-w-[433px] max-w-full mq450:text-lg mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px] mq925:min-w-full">
+									What exactly do interior designers do?
+								</h3>
+								<div class="stm-answer relative text-lg leading-[30px] font-body-b4-merriweather-13">
+									Interior design companies in Dubai are responsible for the entire process of designing and decorating spaces. This includes conceptualizing the design, selecting materials and finishes, planning the
+									layout, and
+									overseeing the execution. Top interior design companies ensure that the space decoration is functional and aesthetically pleasing, carefully considering every detail.
+
+								</div>
+							</div>
+							<img class="cursor-pointer stm-minus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconsminuscircle.webp">
+							<img class="cursor-pointer stm-plus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconspluscircle.webp">
+						</div>
+						<div class="stm-faq self-stretch flex flex-row items-start justify-center py-[11px] px-0 box-border gap-2.5 max-w-full mq925:flex-wrap">
+							<div class="flex-1 flex flex-col items-start justify-start pt-1.5 px-0 pb-0 box-border gap-[26px] min-w-[528px] max-w-full mq925:min-w-[80%]">
+								<h3 class="m-0 flex-1 relative text-inherit tracking-[-0.01em] leading-[36px] font-bold font-[inherit] inline-block min-w-[399px] max-w-full mq450:text-lg mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px] mq925:min-w-full">
+									Is Dubai good for interior designing?
+								</h3>
+								<div class="stm-answer relative text-lg leading-[30px] font-body-b4-merriweather-13">
+									Yes, Dubai is an excellent place for interior designing. The city is known for its innovative interior architecture and high demand for quality interior spaces. Interior designers in Dubai have access to
+									diverse
+									materials and styles, making it an ideal location for creating unique, world-class designs.
+								</div>
+							</div>
+							<img class="cursor-pointer stm-minus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconsminuscircle.webp">
+							<img class="cursor-pointer stm-plus h-12 w-12 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/feather-iconspluscircle.webp">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<footer class="bg-general-1-secondary box-border flex flex-col font-button-space-grotesk gap-[58px] items-start justify-start max-w-full mq925:box-border mq925:gap-[29px] mq925:pt-[52px] pb-0 pt-20 px-0 relative self-stretch text-5xl text-general-white text-left z-[1]">
+		<div class="box-border flex flex-row items-start justify-center max-w-full px-5 py-0 self-stretch">
+			<div class="flex flex-row gap-[60px] items-start justify-center max-w-full mq1400:flex-wrap mq1400:gap-[30px] w-[1170px]">
+				<div class="flex flex-1 flex-col gap-[30px] items-start justify-start max-w-full min-w-[474px] mq925:min-w-full"><h3
+						class="font-[inherit] font-medium leading-[30px] m-0 mq450:leading-[24px] mq450:text-lgi relative text-inherit tracking-[-0.01em]"> Our Services </h3>
+					<div class="flex flex-row gap-[30px] items-start justify-start mq925:flex-wrap self-stretch text-base text-gray-300">
+						<div class="flex flex-1 flex-col gap-3.5 items-start justify-start min-w-[167px]">
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" <img="" alt="" src="/wp-content/themes/fractal/fractal/build/images/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									Residential Interior Design
+
+								</div>
+								</a>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/commercial-interior-design/"> Commercial Interior Design</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/villa-design/"> Villa Design</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="flex flex-1 flex-col gap-3.5 items-start justify-start min-w-[167px]">
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/hotel-interior-design/"> Hotel Interior Design</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/renovation-works/"> Renovation Works</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/furniture-and-accessories-selection-delivery/"> Furniture and&nbsp;Accessories
+										Selection
+										&amp;&nbsp;Delivery</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="flex flex-1 flex-col gap-3.5 items-start justify-start min-w-[167px]">
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/comprehensive-project-support/"> Comprehensive Project Support</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/construction-supervision/"> Construction Supervision</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col gap-[30px] items-start justify-start max-w-full min-w-[380px] mq1400:flex-1 mq450:min-w-full overflow-hidden"><h3
+						class="font-[inherit] font-medium inline-block leading-[30px] m-0 min-w-[129px] mq450:leading-[24px] mq450:text-lgi relative text-inherit tracking-[-0.01em]"> Quick Links </h3>
+					<div class="flex flex-row gap-[30px] items-start justify-start mq450:flex-wrap self-stretch text-base text-gray-300">
+						<div class="flex flex-1 flex-col gap-3.5 items-start justify-start min-w-[114px]">
+
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/"> Home</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/services/"> Services</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/business-setup-services/"> Projects</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="flex flex-1 flex-col gap-3.5 items-start justify-start min-w-[114px]">
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/blog/"> Blog</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/about/"> About Us</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/contact/"> Contact Us</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box-border flex flex-row items-start justify-center max-w-full px-5 py-0 self-stretch"><img class="max-h-full max-w-full relative w-[1170px]" alt="" src="/wp-content/themes/fractal/fractal/build/rectangle-691.webp"></div>
+		<div class="box-border flex flex-row font-body-b4-merriweather-13 items-start justify-center max-w-full px-5 py-0 self-stretch text-gray-200 text-sm">
+			<div class="content-start flex flex-row flex-wrap gap-[60px] items-start justify-center max-w-full mq1400:gap-[30px] w-[1170px]">
+				<div class="flex flex-1 flex-col gap-[23px] items-start justify-start max-w-full min-w-[361px] mq450:min-w-full relative">
+					<div class="flex flex-row items-center justify-start">
+						<a href="https://fractal-new.test/">
+							<img class="h-[63px] relative w-[172.1px]" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/logotype-1.webp">
+						</a><a href="https://fractal-new.test/">
+					</a>
+					</div>
+
+
+					<div class="leading-[24px] relative"> Fractal is a Dubai-based leading interior design company dedicated to&nbsp;creating exceptional spaces (Home, Villa, Hotel fit out works, Offices, Commercial spaces, etc) that
+						reflect
+						your unique&nbsp;taste.
+					</div>
+					<div class="flex flex-row font-button-space-grotesk gap-3.5 items-center justify-center mq925:flex-wrap overflow-hidden rounded-[20px] text-[20px] text-general-white">
+						<div class="font-medium leading-[26px] mq450:leading-[21px] mq450:text-base relative tracking-[-0.01em]"> Follow Us on Social Media</div>
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialfacebook-filled.webp">
+
+							</div>
+						</a>
+						<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<img class="h-6 object-cover relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialyoutube@2x.webp">
+							</a>
+						</div>
+						<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<img class="h-6 object-cover relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialinstagram@2x.webp">
+							</a>
+
+						</div>
+						<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialtwitter.webp">
+							</a>
+						</div>
+						<div class="border-[1px] border-gray-100 border-solid box-border flex flex-col h-12 items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<img class="h-6 object-cover relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssociallinkedin@2x.webp">
+							</a>
+						</div>
+					</div>
+					<div class="!m-[0] absolute bottom-[-8.78%] flex-row gap-5 h-[22.01%] hidden items-center justify-center left-[0.11%] mq450:flex-wrap overflow-hidden right-[37.14%] top-[86.77%] w-[62.76%] z-[3]"><img
+							class="h-[50.4px] overflow-hidden relative shrink-0 w-[102.8px]" alt="" src="/wp-content/themes/fractal/fractal/build/twitter.webp"> <img class="h-[50.4px] overflow-hidden relative shrink-0 w-[102.8px]" alt=""
+																																									 src="/wp-content/themes/fractal/fractal/build/facebook.webp"> <img
+							class="h-[50.4px] overflow-hidden relative shrink-0 w-[102.8px]" alt="" src="/wp-content/themes/fractal/fractal/build/youtube.webp"></div>
+				</div>
+				<div class="flex flex-1 flex-col gap-[28.3px] items-start justify-start max-w-full min-w-[361px] mq450:min-w-full text-5xl">
+					<div class="flex flex-row font-button-space-grotesk items-start justify-start overflow-hidden self-stretch text-general-white"><h3
+							class="font-[inherit] font-medium leading-[30px] m-0 mq450:leading-[24px] mq450:text-lgi relative text-inherit tracking-[-0.01em]"> Subscribe to Our Newsletter </h3></div>
+					<div class="leading-[24px] relative text-sm"> Stay ahead in a rapidly changing world. Subscribe to&nbsp;Fractal Insights, our monthly look at the critical issues facing global businesses.</div>
+					<div class="flex flex-row gap-2.5 items-start justify-start max-w-full mq925:flex-wrap self-stretch"><input
+							class="[border:none] [outline:none] bg-general-1-secondary-variant box-border flex flex-1 flex-row font-body-b4-merriweather-13 h-11 items-start justify-start max-w-full min-w-[276px] px-[15px] py-2.5 text-gray-300 text-sm w-full"
+							placeholder="Your email address" type="text">
+						<button class="[border:none] bg-general-1-primary cursor-pointer flex flex-row gap-[15px] items-start justify-start overflow-hidden px-[15px] py-0 mbtn-prm">
+							<div class="bg-general-1-primary-variant h-11 ml-[-135px] relative shrink-0 w-[120px]"></div>
+							<div class="box-border flex flex-col items-start justify-start pb-0 pt-[11px] px-0 w-[90px]">
+								<div class="font-button-space-grotesk font-medium leading-[22px] relative self-stretch shrink-0 text-base text-center text-general-white"> Subscribe</div>
+							</div>
+						</button>
+					</div>
+					<div class="flex flex-row gap-2.5 items-start justify-start max-w-full text-smi"><input class="h-[21px] m-0 w-5" type="checkbox">
+						<div class="flex flex-row gap-1 items-start justify-start max-w-[calc(100%_-_30px)] mq450:flex-wrap">
+							<div class="inline-block leading-[22px] min-w-[96px] relative"> I have read the</div>
+							<a class="[text-decoration:none] leading-[22px] relative text-general-white">Privacy Policy</a>
+							<div class="leading-[22px] relative"> and agree to its terms.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-col gap-[25px] items-center justify-start max-w-full self-stretch"><img class="max-h-full max-w-full relative w-[1170px]" alt="" src="/wp-content/themes/fractal/fractal/build/rectangle-691.webp">
+			<copyright class="box-border flex flex-row font-primary-paragraph-paragraph-5 items-center justify-center max-w-full pb-[26px] text-gray-300 text-left text-xs">
+				<div class="box-border flex flex-row gap-0.5 items-center justify-center max-w-full py-0">
+					<div class="inline-block leading-[22px] min-w-[45px] relative"> © 2024</div>
+					<div class="leading-[22px] relative text-general-white"> Fractal</div>
+					<div class="leading-[22px] relative"> | All rights reserved</div>
+				</div>
+			</copyright>
+		</div>
+	</footer>
+
+	<div class="relative z-[11111111111111] stm-f" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="myModal" style="display: none">
+		<div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+		<div class="fixed inset-0 z-10 overflow-y-auto">
+			<div class="flex items-start justify-center min-h-full p-4 pt-[40px] text-center sm:items-center sm:p-0">
+				<div class="relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
+					<div class="bg-general-1-primary ">
+						<div class="sm:flex sm:items-start ">
+							<div class="self-stretch flex flex-row items-start justify-start flex-wrap content-start
+						gap-[62px] max-w-full text-gray-400 mq450:gap-[15px] mq925:gap-[31px]">
+
+								<div class="flex-1 flex flex-col items-start justify-start box-border min-w-[403px] max-w-full p-[40px]">
+									<div class="self-stretch flex flex-col items-start justify-start gap-[18px]">
+										<div class="self-stretch flex flex-col items-center justify-center gap-5 mq1400:flex-wrap">
+											<input class="stm-contact-input" placeholder="Your First Name" type="text">
+
+											<input class="stm-contact-input" placeholder="Your Email Address" type="text">
+											<input class="stm-contact-input" placeholder="Phone number" type="text">
+
+											<select class="stm-contact-select">
+												<option value="" disabled="" selected="">Project type</option>
+												<option value="type1">Type 1</option>
+												<option value="type2">Type 2</option>
+												<option value="type3">Type 3</option>
+											</select>
+
+											<textarea class="stm-contact-input" placeholder="Your Message" rows="{7}" cols="{31}">
+										</textarea>
+
+											<div class="flex flex-row items-center justify-start relative gap-4 text-right text-base w-[70px]">
+												<div class="arrow-container">
+													<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Submit</span>
+													<div class="circle">
+														<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+														<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+													</div>
+
+
+												</div>
+											</div>
+
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<button type="button" class="absolute top-4 right-4 text-white bg-transparent focus:outline-none" onclick="closeModal()">
+						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

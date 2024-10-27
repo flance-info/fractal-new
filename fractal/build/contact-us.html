@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width">
+
+	<link rel="stylesheet" href="global.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400;500;700&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@700&display=swap">
+
+	<style>@font-face {
+		font-family: Eudoxus Sans;
+		src: url("EudoxusSans-Regular-BF659b6cb1d4714.ttf");
+		font-weight: 400;
+	}
+	</style>
+
+	<script src="/wp-content/themes/fractal/fractal/build/main.js" defer=""></script>
+</head> <!-- Include the head component -->
+
+<body>
+<div class="w-full relative bg-general-white overflow-hidden
+      flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
+	<header class="box-border flex flex-row gap-[275px] items-start justify-center max-w-full mb-[-150px] mq1400:gap-[137px] mq450:gap-[34px] mq925:gap-[69px] px-5 py-[39px]
+self-stretch z-[1] mq925:justify-between mq925:px-[25px]">
+
+		<div class="flex flex-row items-center justify-start">
+
+			<a href="https://fractal-new.test/" class="starter-logo">
+				<img class="h-[62px] relative w-[169.4px] stm-logo-white" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/logotype.webp">
+
+
+			</a>
+
+		</div>
+
+
+		<div class="box-border flex flex-col items-start justify-start max-w-full mq925:w-0 pb-0 pt-2 px-0 w-[725px]">
+
+			<nav class="flex flex-row font-button-space-grotesk gap-5 items-start justify-between m-0 mq925:hidden self-stretch text-base text-general-white text-right">
+
+				<div class="flex flex-col items-start justify-start pb-0 pt-3 px-0  ">
+					<a class="hover:text-general-1-primary-variant [text-decoration:none] leading-[22px] relative text-[inherit] tracking-[0.25em] uppercase " href="https://fractal-new.test/home/">
+						Home </a>
+				</div>
+
+				<div class="flex flex-col items-start justify-start pb-0 pt-3 px-0  ">
+					<a class="hover:text-general-1-primary-variant [text-decoration:none] leading-[22px] relative text-[inherit] tracking-[0.25em] uppercase " href="https://fractal-new.test/business-setup-services/">
+						Projects </a>
+				</div>
+
+
+				<div class="flex flex-col items-start justify-start pb-0 pt-3 px-0  ">
+					<a class="hover:text-general-1-primary-variant [text-decoration:none] leading-[22px] relative text-[inherit] tracking-[0.25em] uppercase " href="https://fractal-new.test/about/">
+						About </a>
+				</div>
+
+
+				<div class="flex flex-col items-start justify-start pb-0 pt-3 px-0  ">
+					<a class="hover:text-general-1-primary-variant [text-decoration:none] leading-[22px] relative text-[inherit] tracking-[0.25em] uppercase " href="https://fractal-new.test/contact/">
+						Contact </a>
+				</div>
+				<button onclick="openModal()" class="[border:none] bg-general-1-primary cursor-pointer flex flex-row gap-[15px]
+			 items-start justify-start overflow-hidden px-[15px] py-0 mbtn-prm ">
+					<div class="bg-general-1-primary-variant h-[46px] ml-[-215px] relative shrink-0 w-[200px]"></div>
+					<div class="box-border flex flex-col items-start justify-start pb-0 pt-3 px-0 w-[170px]"><a
+							class="[text-decoration:none] font-button-space-grotesk font-medium leading-[22px] relative self-stretch shrink-0 text-base text-center text-general-white">Free consultation</a></div>
+				</button>
+
+			</nav>
+
+
+		</div>
+		<div class="navigation hidden mq925:flex">
+			<div class="navigation-menu">
+				<ul class="starter-menu menu ">
+					<li id="menu-item-842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-842"><a href="https://fractal-new.test/home/">Home</a></li>
+					<li id="menu-item-465" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-465"><a href="https://fractal-new.test/business-setup-services/">Projects</a></li>
+					<li id="menu-item-464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-464"><a href="https://fractal-new.test/about/">About</a></li>
+					<li id="menu-item-467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-467"><a href="https://fractal-new.test/contact/">Contact</a></li>
+				</ul>
+
+				<div class="mobile-switcher">
+					<span></span> <span></span> <span></span>
+				</div>
+			</div>
+		</div>
+
+
+	</header>
+
+	<div class="w-full stm-margin-top">
+		<section class="self-stretch relative  h-[460px] text-left text-base text-general-1-secondary
+mq925:text-white font-body-b4-merriweather-13 " xmlns="http://www.w3.org/1999/html">
+			<img class="absolute h-full top-[0px]  bottom-[0px] max-h-full w-full
+			transform translate-x-[50%] left-[-385px] object-cover mq925:transform-unset mq925:left-0" alt="" src="/wp-content/themes/fractal/fractal/build/unsplashmanhvw0nddy1.webp">
+
+
+			<div class="w-full max-w-[1170px]  h-full mx-auto flex flex-col justify-center items-start pt-[50px] mq925:px-[25px]">
+				<div class="tracking-[0.25em] leading-[22px] uppercase font-button-space-grotesk
+				text-general-1-primary inline-block  min-h-[22px] z-[100]">
+					Contact Us
+				</div>
+				<h1 class="relative font-medium text-41xl tracking-[-0.03em] leading-[5px] font-medium font-button-space-grotesk
+				inline-block max-w-[820px]">
+					Get in Touch
+				</h1>
+				<div class="leading-[26px] inline-block max-w-[720px] z-[2]">
+					Fractal Design Studio: Dubai’s choice for exceptional interior design
+					and renovation, creating beautiful and functional spaces.
+				</div>
+			</div>
+
+		</section>
+		<section class="self-stretch bg-general-white overflow-hidden flex flex-row
+			items-start justify-center gap-20 max-w-full text-left text-base
+			text-general-1-primary font-button-space-grotesk w-full mq925:flex-col mq925:mb-[50px]">
+
+			<div class="absolute h-full max-h-full w-full transform translate-x-[50%] left-[-995px] mq925:relative mq925:left-0 mq925:transform-unset">
+				<img class="h-[774px] relative max-h-full max-w-full flex-1 mq925:stm-img-cover " alt="" src="/wp-content/themes/fractal/fractal/build/indoor-luxury-meets-natural-charm.webp">
+			</div>
+
+			<div class="max-w-[1170px] flex flex-col items-start justify-start pt-[197px]
+			px-0 pb-0 box-border w-full mq925:pt-32 mq925:box-border
+			mq925:min-w-full mq1875:flex-1 pl-[280px] min-h-[774px] mq925:px-[25px] mq925:pt-[50px] mq925:min-h-[500px] mq925:px-[25px]">
+				<div class="self-stretch flex flex-col items-start justify-start gap-[30px]">
+
+					<h2 class="m-0 self-stretch relative text-29xl tracking-[-0.02em] leading-[54px] font-medium font-[inherit] text-general-1-secondary mq450:text-10xl mq450:leading-[32px] mq925:text-19xl mq925:leading-[43px]">
+						Have an Interior Design Project in Mind?
+					</h2>
+					<div class="m-0 relative text-5xl tracking-[-0.01em] leading-[30px] font-medium font-[inherit] text-general-1-secondary-variant mq450:text-lgi mq450:leading-[24px]">
+						At Fractal Design Studio, we’re here to turn your interior design
+						ideas into reality. Whether you're envisioning a stylish home, a
+						modern office, a luxurious villa, or a chic hotel, our team of
+						experts is ready to help.
+					</div>
+					<div class="relative leading-[26px] font-body-b4-merriweather-13 text-elements-neutral">
+						As a leading provider of interior design in Dubai, we specialize
+						in creating spaces that reflect your unique style and meet your
+						functional needs. From comprehensive renovation projects to
+						precise fit-out services, we manage every detail to ensure a
+						seamless experience. Our commitment to quality and innovation
+						guarantees that your project will stand out, enhancing both
+						aesthetics and functionality. Get in touch with us today to start
+						your journey toward transforming your space into something
+						extraordinary.
+					</div>
+					<div class="hidden flex-row items-center justify-start relative gap-4 text-right text-general-white">
+						<img class="h-[70px] w-[70px] relative z-[0]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation.webp">
+
+						<div class="absolute !m-[0] top-[24px] left-[0px] tracking-[0.25em] leading-[22px] uppercase opacity-[0] whitespace-nowrap z-[1]">
+							Learn more
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="self-stretch min-h-[640px] relative bg-general-1-secondary
+		w-full text-left text-base text-general-1-primary
+		font-button-space-grotesk mq450:h-auto mq450:min-h-[640] flex flex-row	flex flex-col justify-center items-center">
+
+			<div class="max-w-[1170px] w-full flex flex-row justify-between min-h-[640] mq925:flex-col">
+				<div class="bg-white">
+					<div class="absolute w-[50%] left-0 bg-general-1-secondary mq925:relative mq925:w-full">
+						<div class="left-0 w-[100%] h-full">
+							<img class="  h-full  bottom-[0px]  max-h-full w-[80%] min-h-[640px] mr-[190px] float-right object-cover
+							mq925:m-0 mq925:w-full mq925:relative mq925:float-none" alt="" src="/wp-content/themes/fractal/fractal/build/google-maps1@2x.webp">
+
+							<img class="absolute bottom-[0px] w-80 h-[540px] object-cover z-[1] right-[30px] mq925:hidden " loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/shutterstock-94330351-1-1@2x.webp">
+							<img class="absolute hidden bottom-[-100px] w-[92%] h-[220px] object-initial z-[1] right-[0px] mq925:block" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/burja.png">
+
+						</div>
+					</div>
+				</div>
+				<div class=" w-[50%] items-start justify-start gap-[78px]
+				max-w-full pt-[100px] flex flex-col mq925:stm-width-180-25 ">
+					<div class="self-stretch flex flex-col items-start justify-start gap-8">
+						<h2 class="relative tracking-[0.25em] leading-[22px] uppercase">
+							Contact Us
+						</h2>
+						<div class="self-stretch flex flex-row items-start justify-start flex-wrap
+						 content-start gap-[30px] text-general-white font-body-b4-merriweather-13 mq925:flex-col">
+							<div class="flex-1 relative leading-[26px] inline-block min-w-[175px]">
+								Visit one of our many Fractal WP Offices in United States.
+							</div>
+							<div class="flex-1 flex flex-col items-start justify-start pt-1 px-0 pb-0 box-border min-w-[175px] font-button-space-grotesk mq925:stm-cal-100-60">
+								<select class="w-full placeholder-current
+										 [outline:none]
+										h-[60px] flex-1 shadow-[0px_-1px_0px_rgba(255,_255,_255,_0.5)_inset]
+										overflow-hidden flex flex-row items-start justify-start py-[10px]
+										px-[15px] border-general-9-secondary-variant border-[1px] border-solid box-border
+										 font-medium font-button-space-grotesk
+										text-base  min-w-[195px] z-[1] text-white bg-general-1-secondary">
+									<option value="dubai" selected="">Dubai Office</option>
+									<option value="type1">Type 1</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="self-stretch flex flex-row items-start justify-start flex-wrap content-start gap-[35px] text-5xl text-general-white mq925:stm-cal-100-60">
+						<div class="flex-1 flex flex-col items-start justify-start gap-[78px] min-w-[172px]">
+							<div class="flex flex-col items-start justify-start py-0 pl-0 pr-5 gap-[15px]">
+								<div class="relative text-base tracking-[0.25em] leading-[22px] uppercase text-general-1-primary">
+									Phone & Fax —
+								</div>
+								<a href="tel:+971564744155" class="[text-decoration:none]  text-general-white relative tracking-[-0.01em] leading-[30px] font-medium mq450:text-lgi mq450:leading-[24px]">
+									+971 (56) 474 4155
+								</a>
+								<a href="tel:+971564744156" class="[text-decoration:none]  text-general-white relative tracking-[-0.01em] leading-[30px] font-medium mq450:text-lgi mq450:leading-[24px]">
+									+971 (56) 474 4156
+								</a>
+							</div>
+							<div class="self-stretch flex flex-col items-start justify-start gap-[15px] text-base text-general-1-primary">
+								<div class="relative tracking-[0.25em] leading-[22px] uppercase">
+									Email —
+								</div>
+								<a href="mailto:info@fractaldubai.com"
+								   class="[text-decoration:none] text-general-1-primary m-0 relative text-5xl tracking-[-0.01em] leading-[30px] font-medium font-[inherit] mq450:text-lgi mq450:leading-[24px]">
+									info@fractaldubai.com
+								</a>
+							</div>
+						</div>
+						<div class="flex-1 flex flex-col items-start justify-start gap-3.5 min-w-[175px] text-base text-general-1-primary">
+							<div class="relative tracking-[0.25em] leading-[22px] uppercase">
+								Address —
+							</div>
+							<div class="self-stretch flex flex-col items-start justify-start gap-[30px] text-5xl text-general-white ">
+								<a href="https://www.google.com/maps/search/Office+1004,+Conrad+Business+Tower,+Trade+Centre+First,+485054+,+Dubai,+UAE/@25.2260619,55.2808463,809m/data=!3m2!1e3!4b1?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"
+								   class="[text-decoration:none]  m-0 relative text-inherit tracking-[-0.01em] leading-[30px] font-medium font-[inherit] mq450:text-lgi mq450:leading-[24px]">
+									Office 1004, Conrad Business Tower, Trade Centre First, 485054
+									Dubai, UAE
+								</a>
+								<div onclick="openModal()" class="flex flex-row items-center justify-start relative gap-4 text-right text-base">
+
+
+									<div class="arrow-container">
+										<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Get direction</span>
+										<div class="circle">
+											<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+											<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+										</div>
+
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	<section class="self-stretch bg-general-1-secondary flex flex-row items-center justify-start
+		 box-border relative
+		max-w-full w-full text-center text-base text-general-white
+		font-button-space-grotesk mq925:py-[65px]
+		 mq925:box-border  mq1400:box-border">
+		<div class="ml-auto bg-general-1-primary self-stretch flex-1"></div>
+		<div class="max-w-[1170px] w-full bg-general-1-primary py-[100px]">
+
+
+			<div class="wpcf7 js" id="wpcf7-f784-o1" lang="en-US" dir="ltr">
+				<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
+					<ul></ul>
+				</div>
+				<form action="/#wpcf7-f784-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+					<div style="display: none">
+						<input type="hidden" name="_wpcf7" value="784">
+						<input type="hidden" name="_wpcf7_version" value="5.9.8">
+						<input type="hidden" name="_wpcf7_locale" value="en_US">
+						<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f784-o1">
+						<input type="hidden" name="_wpcf7_container_post" value="0">
+						<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+					</div>
+					<input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Submit"><span class="wpcf7-spinner"></span>
+
+					<div class="self-stretch flex flex-row items-start justify-start max-w-full text-left">
+						<div class="max-w-[810px] flex flex-col items-start justify-start gap-8 w-full mq450:gap-4">
+							<div class="self-stretch flex flex-row items-start justify-start flex-wrap content-start gap-[41px] max-w-full mq450:gap-5 mq925:px-[25px]">
+								<div class="flex flex-col items-start justify-start pt-[27px] px-0 pb-0 mq925:w-full">
+									<div class="relative tracking-[0.25em] leading-[22px] uppercase z-[1] ">
+										Get in Touch
+									</div>
+								</div>
+
+								<div class="m-0 flex-1 relative text-29xl tracking-[-0.02em] leading-[54px]
+							font-medium font-[inherit] inline-block max-w-full z-[1]
+							mq450:text-10xl mq450:leading-[32px] mq925:text-19xl
+							 mq925:leading-[43px]">
+									Ready to chat about your interior design project?
+								</div>
+							</div>
+							<div class="self-stretch flex flex-col items-start justify-start gap-1 max-w-full font-body-b4-merriweather-13 mq925:px-[25px]">
+								<div class="self-stretch flex flex-row items-start justify-end max-w-full mq925:flex-col">
+
+									<div class="max-w-[620px] relative leading-[26px] inline-block shrink-0 max-w-full z-[1]">
+										<p class="m-0">
+											We’re excited to&nbsp;help you create your dream outdoor
+											or&nbsp;indoor spaces!
+										</p>
+										<p class="m-0">
+											Just fill out the&nbsp;form below, and&nbsp;our team will be in touch
+											to&nbsp;get started.
+										</p>
+									</div>
+								</div>
+								<div class="self-stretch flex flex-row items-start justify-start flex-wrap content-start gap-[62px] max-w-full text-gray-400 mq450:gap-[15px] mq925:gap-[31px]">
+									<img class="h-32 w-32 relative object-cover z-[1] mq925:hidden" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/iconsiconly-blacklightchat@2x.webp">
+
+									<div class="flex-1 flex flex-col items-start justify-start pt-7 px-0 pb-0 box-border min-w-[403px] max-w-full mq600:min-w-[300px]">
+										<div class="self-stretch flex flex-col items-start justify-start gap-[18px]">
+											<div class="self-stretch flex flex-row items-start justify-start gap-5 mq1400:flex-wrap">
+
+												<div class="w-[50%] mq600:w-full mq925:w-[48%]">
+													<span class="wpcf7-form-control-wrap" data-name="first-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required stm-contact-footer-input"
+																														aria-required="true" aria-invalid="false" placeholder="Your First Name" value="" type="text" name="first-name"></span>
+
+												</div>
+
+												<div class="w-[50%] mq600:w-full mq925:w-[48%]"><span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" maxlength="400"
+																																									class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email stm-contact-footer-input"
+																																									aria-required="true" aria-invalid="false" placeholder="Your Email Address"
+																																									value="" type="email" name="your-email"></span>
+												</div>
+
+											</div>
+											<div class="self-stretch flex flex-row items-start justify-start gap-5 mq1400:flex-wrap">
+												<div class="w-[50%] mq600:w-full mq925:w-[48%]"><span class="wpcf7-form-control-wrap" data-name="phone-number"><input size="40" maxlength="400"
+																																									  class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel stm-contact-footer-input"
+																																									  aria-invalid="false" placeholder="Phone number" value="" type="tel"
+																																									  name="phone-number"></span>
+												</div>
+												<div class="w-[50%] mq600:w-full mq925:w-[48%]">
+												<span class="wpcf7-form-control-wrap" data-name="project-type">
+													<select class="wpcf7-form-control wpcf7-select stm-contact-footer-select" aria-invalid="false" name="project-type"><option value="Project type">Project type</option><option value="Type 1">Type 1</option><option
+															value="Type 2">Type 2</option><option value="Type 3">Type 3</option></select></span>
+												</div>
+
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="self-stretch flex flex-row items-start justify-start flex-wrap content-start gap-[62px] max-w-full text-gray-400 mq450:gap-[15px] mq925:gap-[31px]">
+						<div class="w-32"></div>
+						<div class="max-w-[725px] flex flex-row items-end justify-start flex-wrap content-end gap-[35px]
+					w-full text-right mq925:gap-[17px] mq925:px-[25px] mq600:justify-center mq600:flex-col">
+
+							<div class="stm-contact-footer flex-1">
+								<span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required stm-contact-footer-input"
+																										 aria-required="true" aria-invalid="false" placeholder="Your Message" name="your-message"></textarea></span>
+							</div>
+
+							<div id="stm-submit-2" class="stm-submit flex flex-row items-center justify-start relative gap-4 text-right text-base w-[70px] mq925:w-[200px]">
+
+
+								<div class="arrow-container">
+									<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Submit</span>
+									<div class="circle">
+										<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+										<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+					<div class="wpcf7-response-output" aria-hidden="true"></div>
+				</form>
+			</div>
+
+		</div>
+		<div class="ml-auto flex-1"></div>
+	</section>
+
+
+	<footer class="bg-general-1-secondary box-border flex flex-col font-button-space-grotesk gap-[58px] items-start justify-start max-w-full mq925:box-border mq925:gap-[29px] mq925:pt-[52px] pb-0 pt-20 px-0 relative self-stretch text-5xl text-general-white text-left z-[1]">
+		<div class="box-border flex flex-row items-start justify-center max-w-full px-5 py-0 self-stretch">
+			<div class="flex flex-row gap-[60px] items-start justify-center max-w-full mq1400:flex-wrap mq1400:gap-[30px] w-[1170px]">
+				<div class="flex flex-1 flex-col gap-[30px] items-start justify-start max-w-full min-w-[474px] mq925:min-w-full"><h3
+						class="font-[inherit] font-medium leading-[30px] m-0 mq450:leading-[24px] mq450:text-lgi relative text-inherit tracking-[-0.01em]"> Our Services </h3>
+					<div class="flex flex-row gap-[30px] items-start justify-start mq925:flex-wrap self-stretch text-base text-gray-300">
+						<div class="flex flex-1 flex-col gap-3.5 items-start justify-start min-w-[167px]">
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" <img="" alt="" src="/wp-content/themes/fractal/fractal/build/images/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									Residential Interior Design
+
+								</div>
+								</a>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/commercial-interior-design/"> Commercial Interior Design</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/villa-design/"> Villa Design</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="flex flex-1 flex-col gap-3.5 items-start justify-start min-w-[167px]">
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/hotel-interior-design/"> Hotel Interior Design</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/renovation-works/"> Renovation Works</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/furniture-and-accessories-selection-delivery/"> Furniture and&nbsp;Accessories
+										Selection
+										&amp;&nbsp;Delivery</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="flex flex-1 flex-col gap-3.5 items-start justify-start min-w-[167px]">
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/comprehensive-project-support/"> Comprehensive Project Support</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/construction-supervision/"> Construction Supervision</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col gap-[30px] items-start justify-start max-w-full min-w-[380px] mq1400:flex-1 mq450:min-w-full overflow-hidden"><h3
+						class="font-[inherit] font-medium inline-block leading-[30px] m-0 min-w-[129px] mq450:leading-[24px] mq450:text-lgi relative text-inherit tracking-[-0.01em]"> Quick Links </h3>
+					<div class="flex flex-row gap-[30px] items-start justify-start mq450:flex-wrap self-stretch text-base text-gray-300">
+						<div class="flex flex-1 flex-col gap-3.5 items-start justify-start min-w-[114px]">
+
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/"> Home</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/services/"> Services</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/business-setup-services/"> Projects</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="flex flex-1 flex-col gap-3.5 items-start justify-start min-w-[114px]">
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/blog/"> Blog</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/about/"> About Us</a>
+								</div>
+							</div>
+
+							<div class="flex flex-row gap-2.5 items-center justify-start self-stretch">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconsarrowchevronright.webp">
+								<div class="flex-1 font-medium leading-[22px] relative">
+									<a class="[text-decoration:none] hover:text-general-1-primary text-gray-300 font-medium" href="https://fractal-new.test/contact/"> Contact Us</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box-border flex flex-row items-start justify-center max-w-full px-5 py-0 self-stretch"><img class="max-h-full max-w-full relative w-[1170px]" alt="" src="/wp-content/themes/fractal/fractal/build/rectangle-691.webp">
+		</div>
+		<div class="box-border flex flex-row font-body-b4-merriweather-13 items-start justify-center max-w-full px-5 py-0 self-stretch text-gray-200 text-sm">
+			<div class="content-start flex flex-row flex-wrap gap-[60px] items-start justify-center max-w-full mq1400:gap-[30px] w-[1170px]">
+				<div class="flex flex-1 flex-col gap-[23px] items-start justify-start max-w-full min-w-[361px] mq450:min-w-full relative">
+					<div class="flex flex-row items-center justify-start">
+						<a href="https://fractal-new.test/">
+							<img class="h-[63px] relative w-[172.1px]" loading="lazy" alt="" src="/wp-content/themes/fractal/fractal/build/logotype-1.webp">
+						</a><a href="https://fractal-new.test/">
+					</a>
+					</div>
+
+
+					<div class="leading-[24px] relative"> Fractal is a Dubai-based leading interior design company dedicated to&nbsp;creating exceptional spaces (Home, Villa, Hotel fit out works, Offices, Commercial spaces, etc) that
+						reflect
+						your unique&nbsp;taste.
+					</div>
+					<div class="flex flex-row font-button-space-grotesk gap-3.5 items-center justify-center mq925:flex-wrap overflow-hidden rounded-[20px] text-[20px] text-general-white">
+						<div class="font-medium leading-[26px] mq450:leading-[21px] mq450:text-base relative tracking-[-0.01em]"> Follow Us on Social Media</div>
+						<a href="" target="_blank" rel="noopener noreferrer">
+							<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialfacebook-filled.webp">
+
+							</div>
+						</a>
+						<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<img class="h-6 object-cover relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialyoutube@2x.webp">
+							</a>
+						</div>
+						<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<img class="h-6 object-cover relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialinstagram@2x.webp">
+							</a>
+
+						</div>
+						<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<img class="h-6 relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialtwitter.webp">
+							</a>
+						</div>
+						<div class="border-[1px] border-gray-100 border-solid box-border flex flex-col h-12 items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<img class="h-6 object-cover relative w-6" alt="" src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssociallinkedin@2x.webp">
+							</a>
+						</div>
+					</div>
+					<div class="!m-[0] absolute bottom-[-8.78%] flex-row gap-5 h-[22.01%] hidden items-center justify-center left-[0.11%] mq450:flex-wrap overflow-hidden right-[37.14%] top-[86.77%] w-[62.76%] z-[3]"><img
+							class="h-[50.4px] overflow-hidden relative shrink-0 w-[102.8px]" alt="" src="/wp-content/themes/fractal/fractal/build/twitter.webp"> <img class="h-[50.4px] overflow-hidden relative shrink-0 w-[102.8px]" alt=""
+																																									  src="/wp-content/themes/fractal/fractal/build/facebook.webp"> <img
+							class="h-[50.4px] overflow-hidden relative shrink-0 w-[102.8px]" alt="" src="/wp-content/themes/fractal/fractal/build/youtube.webp"></div>
+				</div>
+				<div class="flex flex-1 flex-col gap-[28.3px] items-start justify-start max-w-full min-w-[361px] mq450:min-w-full text-5xl">
+					<div class="flex flex-row font-button-space-grotesk items-start justify-start overflow-hidden self-stretch text-general-white"><h3
+							class="font-[inherit] font-medium leading-[30px] m-0 mq450:leading-[24px] mq450:text-lgi relative text-inherit tracking-[-0.01em]"> Subscribe to Our Newsletter </h3></div>
+					<div class="leading-[24px] relative text-sm"> Stay ahead in a rapidly changing world. Subscribe to&nbsp;Fractal Insights, our monthly look at the critical issues facing global businesses.</div>
+					<div class="flex flex-row gap-2.5 items-start justify-start max-w-full mq925:flex-wrap self-stretch"><input
+							class="[border:none] [outline:none] bg-general-1-secondary-variant box-border flex flex-1 flex-row font-body-b4-merriweather-13 h-11 items-start justify-start max-w-full min-w-[276px] px-[15px] py-2.5 text-gray-300 text-sm w-full"
+							placeholder="Your email address" type="text">
+						<button class="[border:none] bg-general-1-primary cursor-pointer flex flex-row gap-[15px] items-start justify-start overflow-hidden px-[15px] py-0 mbtn-prm">
+							<div class="bg-general-1-primary-variant h-11 ml-[-135px] relative shrink-0 w-[120px]"></div>
+							<div class="box-border flex flex-col items-start justify-start pb-0 pt-[11px] px-0 w-[90px]">
+								<div class="font-button-space-grotesk font-medium leading-[22px] relative self-stretch shrink-0 text-base text-center text-general-white"> Subscribe</div>
+							</div>
+						</button>
+					</div>
+					<div class="flex flex-row gap-2.5 items-start justify-start max-w-full text-smi"><input class="h-[21px] m-0 w-5" type="checkbox">
+						<div class="flex flex-row gap-1 items-start justify-start max-w-[calc(100%_-_30px)] mq450:flex-wrap">
+							<div class="inline-block leading-[22px] min-w-[96px] relative"> I have read the</div>
+							<a class="[text-decoration:none] leading-[22px] relative text-general-white">Privacy Policy</a>
+							<div class="leading-[22px] relative"> and agree to its terms.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-col gap-[25px] items-center justify-start max-w-full self-stretch"><img class="max-h-full max-w-full relative w-[1170px]" alt="" src="/wp-content/themes/fractal/fractal/build/rectangle-691.webp">
+			<copyright class="box-border flex flex-row font-primary-paragraph-paragraph-5 items-center justify-center max-w-full pb-[26px] text-gray-300 text-left text-xs">
+				<div class="box-border flex flex-row gap-0.5 items-center justify-center max-w-full py-0">
+					<div class="inline-block leading-[22px] min-w-[45px] relative"> © 2024</div>
+					<div class="leading-[22px] relative text-general-white"> Fractal</div>
+					<div class="leading-[22px] relative"> | All rights reserved</div>
+				</div>
+			</copyright>
+		</div>
+	</footer>
+
+	<div class="relative z-[11111111111111] stm-f" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="myModal" style="display: none">
+		<div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+		<div class="fixed inset-0 z-10 overflow-y-auto">
+			<div class="flex items-start justify-center min-h-full p-4 pt-[40px] text-center sm:items-center sm:p-0">
+				<div class="relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
+					<div class="bg-general-1-primary ">
+						<div class="sm:flex sm:items-start ">
+							<div class="self-stretch flex flex-row items-start justify-start flex-wrap content-start
+						gap-[62px] max-w-full text-gray-400 mq450:gap-[15px] mq925:gap-[31px]">
+
+								<div class="flex-1 flex flex-col items-start justify-start box-border min-w-[403px] max-w-full p-[40px]">
+									<div class="self-stretch flex flex-col items-start justify-start gap-[18px]">
+										<div class="self-stretch flex flex-col items-center justify-center gap-5 mq1400:flex-wrap">
+											<input class="stm-contact-input" placeholder="Your First Name" type="text">
+
+											<input class="stm-contact-input" placeholder="Your Email Address" type="text">
+											<input class="stm-contact-input" placeholder="Phone number" type="text">
+
+											<select class="stm-contact-select">
+												<option value="" disabled="" selected="">Project type</option>
+												<option value="type1">Type 1</option>
+												<option value="type2">Type 2</option>
+												<option value="type3">Type 3</option>
+											</select>
+
+											<textarea class="stm-contact-input" placeholder="Your Message" rows="{7}" cols="{31}">
+										</textarea>
+
+											<div class="flex flex-row items-center justify-start relative gap-4 text-right text-base w-[70px]">
+												<div class="arrow-container">
+													<span class="text tracking-[0.25em] leading-[22px]  uppercase z-[1]">Submit</span>
+													<div class="circle">
+														<img class="stm-mb w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/navigation2.webp">
+														<img class="stm-mb1 w-[70px] relative h-[70px]" alt="" src="/wp-content/themes/fractal/fractal/build/moved-arrow.webp">
+													</div>
+
+
+												</div>
+											</div>
+
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<button type="button" class="absolute top-4 right-4 text-white bg-transparent focus:outline-none" onclick="closeModal()">
+						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
