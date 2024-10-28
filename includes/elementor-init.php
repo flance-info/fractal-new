@@ -30,6 +30,7 @@ function register_custom_banner_widget() {
 		require_once( get_stylesheet_directory() . '/elementor-widgets/class-your-journey-widget.php' );
 		require_once( get_stylesheet_directory() . '/elementor-widgets/class-why-choose-widget.php' );
 		require_once( get_stylesheet_directory() . '/elementor-widgets/class-faq-widget.php' );
+require_once( get_stylesheet_directory() . '/elementor-widgets/class-all-blogs-widget.php' );
 
 
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Custom_Banner_Widget() );
