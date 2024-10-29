@@ -199,7 +199,7 @@ public function get_script_depends() {
 	mq925:top-[300px] mq925:translate-x-0 mq925:left-0 mq925:object-cover mq925:max-h-[500px]">
 					<div class="slide w-full slide-1 mq925:mt-[-160px] mq600:mt-[-135px] w-calc-100vw-minus-50px">
 
-						<{{ slide.heading_tag }} class="slide-heading elementor-heading-title relative font-medium text-77xl mq925:text-59xl tracking-[-4px] leading-[96px] inline-block max-w-[820px]" style="color: {{ slide.heading_color }};">
+						<{{ slide.heading_tag }} class="slider-title slide-heading elementor-heading-title relative font-medium text-77xl mq925:text-59xl tracking-[-4px] leading-[96px] inline-block max-w-[820px]" style="color: {{ slide.heading_color }};">
 						{{{ slide.slide_heading }}}
 					</{{ slide.heading_tag }}>
 				</div>

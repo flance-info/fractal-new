@@ -195,14 +195,14 @@ $current_url           = home_url( add_query_arg( null, null ) );
 					<div class="font-medium leading-[26px] mq450:leading-[21px] mq450:text-base relative tracking-[-0.01em]"> Follow Us on Social Media</div>
 
 					<a href="<?php echo esc_url( $facebook_url ); ?>" target="_blank" rel="noopener noreferrer">
-						<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+						<div class="social-link border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
 
 							<img class="h-6 relative w-6" alt src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialfacebook-filled.webp">
 
 						</div>
 					</a>
 					<a href="<?php echo esc_url( $youtube_url ); ?>" target="_blank" rel="noopener noreferrer">
-						<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+						<div class=" social-link border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
 
 							<img class="h-6 object-cover relative w-6" alt src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialyoutube@2x.webp">
 
@@ -210,7 +210,7 @@ $current_url           = home_url( add_query_arg( null, null ) );
 					</a>
 					<a href="<?php echo esc_url( $instagram_url ); ?>" target="_blank" rel="noopener noreferrer">
 
-						<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+						<div class="social-link border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
 							<img class="h-6 object-cover relative w-6" alt src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialinstagram@2x.webp">
 
 
@@ -218,14 +218,14 @@ $current_url           = home_url( add_query_arg( null, null ) );
 					</a>
 					<a href="<?php echo esc_url( $twitter_url ); ?>" target="_blank" rel="noopener noreferrer">
 
-						<div class="border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+						<div class="social-link border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
 							<img class="h-6 relative w-6" alt src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssocialtwitter.webp">
 
 						</div>
 					</a>
 					<a href="<?php echo esc_url( $twitter_url ); ?>" target="_blank" rel="noopener noreferrer">
 
-						<div class="border-[1px] border-gray-100 border-solid box-border flex flex-col h-12 items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
+						<div class="social-link border-[1px] border-gray-100 border-solid box-border flex flex-col h-12 items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
 							<img class="h-6 object-cover relative w-6" alt src="/wp-content/themes/fractal/fractal/build/iconssmall-iconssociallinkedin@2x.webp">
 
 						</div>
