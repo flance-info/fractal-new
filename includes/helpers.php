@@ -4,3 +4,4 @@ remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 require_once 'theme_config.php';
 require_once 'elementor-init.php';
+require_once 'post-type-project.php';

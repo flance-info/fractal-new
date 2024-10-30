@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/elementor/.idea/elementor.iml" filepath="$PROJECT_DIR$/../../plugins/elementor/.idea/elementor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../plugins/elementor-pro/.idea/elementor-pro.iml" filepath="$PROJECT_DIR$/../../plugins/elementor-pro/.idea/elementor-pro.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/fractal.iml" filepath="$PROJECT_DIR$/.idea/fractal.iml" />
     </modules>
   </component>

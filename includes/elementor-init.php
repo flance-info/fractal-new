@@ -31,6 +31,7 @@ function register_custom_banner_widget() {
 		require_once( get_stylesheet_directory() . '/elementor-widgets/class-why-choose-widget.php' );
 		require_once( get_stylesheet_directory() . '/elementor-widgets/class-faq-widget.php' );
 require_once( get_stylesheet_directory() . '/elementor-widgets/class-all-blogs-widget.php' );
+require_once( get_stylesheet_directory() . '/elementor-widgets/custom_posts.php' );
 
 
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Custom_Banner_Widget() );
@@ -54,6 +55,7 @@ require_once( get_stylesheet_directory() . '/elementor-widgets/class-all-blogs-w
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \YourJourney_Widget());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \WhyChoose_Widget());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \FAQ_Widget());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Custom_Posts_Widget());
 
 	}
 }

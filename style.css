@@ -24,6 +24,10 @@ body .slider-title {
   line-height: 95px;
 }
 
+body .stm-img-210 {
+  height: 210px !important;
+}
+
 .elementor-element.e-con-full.e-grid.e-con {
   padding: 0px;
 }

@@ -16,6 +16,8 @@
 .social-link:hover {
 	background: rgb(166 135 106 / var(--tw-bg-opacity)); /* Change to desired hover background color */
 }
+
+
 body
 .slider-title{
   font-family: 'Space Grotesk';
@@ -23,8 +25,10 @@ body
     font-size: 96px;
     line-height: 95px;
 }
-
-
+ body
+.stm-img-210{
+  height: 210px !important;
+}
 
 .elementor-element.e-con-full.e-grid.e-con {
 	padding: 0px;
