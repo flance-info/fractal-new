@@ -127,6 +127,12 @@ body .elementor .slides img {
     width: 100%;
     background: rgba(255, 255, 255, 0.6);
   }
+  .col-reverse .section_background_color {
+    flex-direction: column-reverse;
+  }
+  body .stm-col-rev {
+    flex-direction: column-reverse;
+  }
 }
 @media (max-width: 767px) {
   body .elementor-949 .elementor-element.elementor-element-25f122c {

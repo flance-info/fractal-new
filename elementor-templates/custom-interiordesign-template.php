@@ -51,7 +51,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 		</div>
 		<?php $bg_image    = ! empty( $settings["service_2_bg_image"]['url'] ) ? esc_url( $settings["service_2_bg_image"]['url'] ) : '' ; ?>
-		<div class="self-stretch flex flex-row items-center justify-start gap-[60px] text-right text-base text-general-white mq925:flex-col">
+		<div class="self-stretch stm-col-rev flex flex-row items-center justify-start gap-[60px] text-right text-base text-general-white mq925:flex-col">
 			<div class="self-stretch flex-[0.8559] mq925:w-full mq925:min-h-[664px]  mq600:min-h-[320px] mq925:p-0 flex flex-col items-end justify-end p-10 bg-cover bg-no-repeat bg-[top]"  style="background-image: url('<?php echo esc_url( $bg_image ); ?>');">
 				<div class="hidden flex-row items-center justify-start gap-4">
 					<div class="relative tracking-[0.25em] leading-[22px] uppercase">

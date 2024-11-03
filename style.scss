@@ -14,7 +14,6 @@
 }
 
 
-
 .social-link:hover {
   background: rgb(166, 135, 106, var(--tw-bg-opacity)); /* Change to desired hover background color */
 }
@@ -126,10 +125,20 @@ body .elementor .slides img {
   }
 
   header {
-    position: fixed;
-    width: 100%;
-    background: #ffffff99;
-}
+	position: fixed;
+	width: 100%;
+	background: #ffffff99;
+  }
+
+  .col-reverse {
+	.section_background_color {
+	  flex-direction: column-reverse;
+	}
+  }
+  body
+  .stm-col-rev {
+     flex-direction: column-reverse;
+  }
 
 }
 
