@@ -128,7 +128,12 @@ body .elementor .slides img {
 	position: fixed;
 	width: 100%;
 	background: #ffffff99;
+	  padding-top: 20px !important;
+    padding-bottom: 10px !important;
+	    z-index: 22222222222222 !important;
   }
+
+
 
   .col-reverse {
 	.section_background_color {
@@ -218,6 +223,15 @@ body .elementor .slides img {
   .stm-lates-blog
   .heading {
 	margin-top: -80px
+  }
+body
+.stm-email-text {
+    padding-bottom: 70px;
+}
+  .stm-custom-post {
+	.grid-cols-3 {
+	  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	}
   }
 }
 

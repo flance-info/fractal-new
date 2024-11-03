@@ -36,10 +36,10 @@ $heading_html_tag = $settings['heading_html_tag'];
 				<div class="absolute w-[50%] left-0 bg-general-1-secondary mq925:relative mq925:w-full">
 					<div class="left-0 w-[100%] h-full">
 						<img class="  h-full  bottom-[0px]  max-h-full w-[80%] min-h-[640px] mr-[190px] float-right object-cover
-							mq925:m-0 mq925:w-full mq925:relative mq925:float-none" alt="" src="<?php echo esc_url( $settings['google_maps_image']['url'] ); ?>">
+							mq925:m-0 mq925:w-full mq925:relative mq925:float-none stm-img-map" alt="" src="<?php echo esc_url( $settings['google_maps_image']['url'] ); ?>">
 
-						<img class="absolute bottom-[0px] w-80 h-[540px] object-cover z-[1] right-[30px] mq925:hidden " loading="lazy" src="<?php echo esc_url( $settings['additional_image']['url'] ); ?>">
-						<img class="absolute hidden bottom-[-100px] w-[92%] h-[220px] object-initial z-[1] right-[0px] mq925:block" loading="lazy" src="<?php echo esc_url( $settings['additional_mobile_image']['url'] ); ?>">
+						<img class="absolute bottom-[0px] w-80 h-[540px] stm-burg-desk object-cover z-[1] right-[30px] mq925:hidden " loading="lazy" src="<?php echo esc_url( $settings['additional_image']['url'] ); ?>">
+						<img class="absolute hidden bottom-[-100px] w-[92%] h-[220px] stm-burg-mobile object-initial z-[1] right-[0px] mq925:block" loading="lazy" src="<?php echo esc_url( $settings['additional_mobile_image']['url'] ); ?>">
 
 					</div>
 				</div>
@@ -96,11 +96,11 @@ $heading_html_tag = $settings['heading_html_tag'];
 							</a>
 						</div>
 						<div class="self-stretch flex flex-col items-start justify-start gap-[15px] text-base text-general-1-primary label">
-							<div class="relative tracking-[0.25em] leading-[22px] uppercase elementor-inline-editing" <?php echo $this->get_render_attribute_string( 'email_label' ); ?> >
+							<div class="relative tracking-[0.25em] leading-[22px] stm-email uppercase elementor-inline-editing" <?php echo $this->get_render_attribute_string( 'email_label' ); ?> >
 
 								<?php echo $settings['email_label']; ?>
 							</div>
-							<a href="mailto:<?php echo $settings['email']; ?>" class="[text-decoration:none] text-general-1-primary m-0 relative text-5xl
+							<a href="mailto:<?php echo $settings['email']; ?>" class="[text-decoration:none] stm-email-text text-general-1-primary m-0 relative text-5xl
 							 tracking-[-0.01em] leading-[30px] font-medium font-[inherit]
 							  mq450:text-lgi mq450:leading-[24px] elementor-inline-editing label" <?php echo $this->get_render_attribute_string( 'email' ); ?> >
 								<?php echo $settings['email']; ?>

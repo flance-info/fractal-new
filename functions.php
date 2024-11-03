@@ -8,3 +8,9 @@ define( 'VCN_TEMPLATE_DIR', get_template_directory() );
 require_once 'includes/helpers.php';
 require_once 'includes/enqueue.php';
 require_once 'includes/custom-functions.php';
+
+function allow_webp_uploads($mimes) {
+    $mimes['webp'] = 'image/webp';
+    return $mimes;
+}
+add_filter('upload_mimes', 'allow_webp_uploads');
