@@ -192,7 +192,33 @@ body .elementor .slides img {
 
 	}
   }
+  .stm-brands section {
+	padding: 50px 0px;
+  }
 
+  .stm-desi-comp {
+
+	section {
+	  padding-top: 80px;
+	  padding-bottom: 120px;
+	}
+
+	.paragraph-title {
+	  margin-top: 5px;
+	}
+
+	.bg-cover {
+	  min-height: 500px;
+	  /* background-size: contain; */
+	  background-position: center;
+
+	}
+  }
+
+  .stm-lates-blog
+  .heading {
+	margin-top: -80px
+  }
 }
 
 @media (max-width: 767px) {

@@ -169,6 +169,24 @@ body .elementor .slides img {
     /* background-size: contain; */
     background-position: center;
   }
+  .stm-brands section {
+    padding: 50px 0px;
+  }
+  .stm-desi-comp section {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+  .stm-desi-comp .paragraph-title {
+    margin-top: 5px;
+  }
+  .stm-desi-comp .bg-cover {
+    min-height: 500px;
+    /* background-size: contain; */
+    background-position: center;
+  }
+  .stm-lates-blog .heading {
+    margin-top: -80px;
+  }
 }
 @media (max-width: 767px) {
   body .elementor-949 .elementor-element.elementor-element-25f122c {
