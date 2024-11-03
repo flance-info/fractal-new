@@ -133,6 +133,42 @@ body .elementor .slides img {
   body .stm-col-rev {
     flex-direction: column-reverse;
   }
+  .sect-about .side-img {
+    object-fit: contain;
+  }
+  body .stm-ourservices .service-1-title {
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+  body .stm-ourservices .service-2-title {
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+  body .stm-ourservices .service-3-title {
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+  body .stm-ourservices .service-4-title {
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+  body .stm-ourservices .stm-section {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+  .stm-our-works .label {
+    margin-top: -70px;
+  }
+  .stm-our-works .work_title {
+    font-size: 68px;
+    line-height: 90px;
+    margin-bottom: 10px;
+  }
+  .stm-ourservices .stm-imgs, .stm-ourservices .bg-cover {
+    min-height: 500px;
+    /* background-size: contain; */
+    background-position: center;
+  }
 }
 @media (max-width: 767px) {
   body .elementor-949 .elementor-element.elementor-element-25f122c {
