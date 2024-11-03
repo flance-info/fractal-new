@@ -122,6 +122,11 @@ body .elementor .slides img {
   body .stm-margin-top {
     margin-top: 130px !important;
   }
+  header {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+  }
 }
 @media (max-width: 767px) {
   body .elementor-949 .elementor-element.elementor-element-25f122c {

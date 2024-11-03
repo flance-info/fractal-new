@@ -31,21 +31,21 @@ class Projects_Post_Type {
 			'not_found'          => __( 'No projects found.', 'textdomain' ),
 			'not_found_in_trash' => __( 'No projects found in Trash.', 'textdomain' ),
 		);
-		$args = array(
-			'labels'             => $labels,
-			'public'             => true,
-			'publicly_queryable' => true,
-			'show_ui'            => true,
-			'show_in_menu'       => true,
-			'query_var'          => true,
-			'rewrite'            => array( 'slug' => 'projects' ),
-			'capability_type'    => 'post',
-			'has_archive'        => true,
-			'hierarchical'       => false,
-			'menu_position'      => null,
-			'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-			'menu_icon'          => 'dashicons-portfolio',
-		);
+		$args =  [
+    'labels'             => $labels,
+    'public'             => true,
+    'publicly_queryable' => true,
+    'show_ui'            => true,
+    'show_in_menu'       => true,
+    'query_var'          => true,
+    'rewrite'            => array('slug' => 'projects'),
+    'capability_type'    => 'post',
+    'has_archive'        => false, // Disable default archive
+    'hierarchical'       => false,
+    'menu_position'      => null,
+    'supports'           => array('title', 'editor', 'thumbnail', 'excerpt'),
+    'menu_icon'          => 'dashicons-portfolio',
+];
 		register_post_type( 'projects', $args );
 	}
 
