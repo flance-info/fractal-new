@@ -128,11 +128,10 @@ body .elementor .slides img {
 	position: fixed;
 	width: 100%;
 	background: #ffffff99;
-	  padding-top: 20px !important;
-    padding-bottom: 10px !important;
-	    z-index: 22222222222222 !important;
+	padding-top: 20px !important;
+	padding-bottom: 10px !important;
+	z-index: 22222222222222 !important;
   }
-
 
 
   .col-reverse {
@@ -224,13 +223,19 @@ body .elementor .slides img {
   .heading {
 	margin-top: -80px
   }
-body
-.stm-email-text {
-    padding-bottom: 70px;
-}
-  .stm-custom-post {
-	.grid-cols-3 {
-	  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  body {
+	.stm-email-text {
+	  padding-bottom: 70px;
+	}
+
+	.stm-custom-post {
+	  .grid-cols-3 {
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	  }
+	}
+
+	.stm-values section {
+	  padding: 80px 21px;
 	}
   }
 }
@@ -240,6 +245,23 @@ body
 	--e-con-grid-template-columns: repeat(1, 1fr);
 	--e-con-grid-template-rows: unset;
 	--grid-auto-flow: row;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+
+	.stm-custom-post {
+	  .grid-cols-3 {
+		grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+	  }
+	}
+
+	.elementor-widget-stm-ourmissions {
+	  .min-w-\[361px\] {
+		min-width: 300px;
+	  }
+	}
   }
 }
 
