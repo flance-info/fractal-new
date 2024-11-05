@@ -262,6 +262,28 @@ body .elementor .slides img {
 		min-width: 300px;
 	  }
 	}
+
+	.elementor-widget-stm-contactusmap img.h-\[220px\] {
+	  height: 220px;
+	}
+
+	.elementor-widget-stm-contactusmap
+	img.min-h-\[640px\] {
+	  height: 400px;
+	  min-height: 400px;
+	}
+
+	.elementor-widget-stm-gallery {
+	  background: black;
+	}
+
+	.stm-our-works .work_title {
+	  font-size: 57px;
+	  line-height: 63px;
+	  margin-bottom: 10px;
+	      height: 100%;
+    max-height: 200px;
+	}
   }
 }
 
