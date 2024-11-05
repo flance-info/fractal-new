@@ -130,11 +130,21 @@ body .elementor .slides img {
     padding-bottom: 10px !important;
     z-index: 22222222222222 !important;
   }
+  .elementor-widget-stm-commercialinteriordesign .sblock {
+    flex-direction: column-reverse;
+  }
   .col-reverse .section_background_color {
     flex-direction: column-reverse;
   }
   body .stm-col-rev {
     flex-direction: column-reverse;
+  }
+  .elementor-widget-stm-whychoose .section_background_color {
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
+  .elementor-widget-stm-whychoose .side-img {
+    object-fit: cover;
   }
   .sect-about .side-img {
     object-fit: contain;
@@ -198,6 +208,12 @@ body .elementor .slides img {
   }
   body .stm-values section {
     padding: 80px 21px;
+  }
+  body .elementor-widget-ourworks .label {
+    margin-top: -60px;
+  }
+  body .elementor-widget-ourworks .work_title {
+    font-size: 45px;
   }
 }
 @media (max-width: 767px) {

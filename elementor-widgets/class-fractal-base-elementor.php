@@ -78,6 +78,94 @@ abstract class FractalBaseElementor extends \Elementor\Widget_Base {
 				],
 			]
 		);
+		$this->add_control(
+			'separators_' . $name,
+			[
+				'type' => \Elementor\Controls_Manager::DIVIDER,
+			]
+		);
+		$this->add_responsive_control(
+			$name . '_text_align',
+			[
+				'label'     => __( 'Text Alignment', 'fractal' ),
+				'type'      => \Elementor\Controls_Manager::CHOOSE,
+				'options'   => [
+					'left'    => [
+						'title' => __( 'Left', 'fractal' ),
+						'icon'  => 'eicon-text-align-left',
+					],
+					'center'  => [
+						'title' => __( 'Center', 'fractal' ),
+						'icon'  => 'eicon-text-align-center',
+					],
+					'right'   => [
+						'title' => __( 'Right', 'fractal' ),
+						'icon'  => 'eicon-text-align-right',
+					],
+					'justify' => [
+						'title' => __( 'Justify', 'fractal' ),
+						'icon'  => 'eicon-text-align-justify',
+					],
+				],
+				'selectors' => [
+					'{{WRAPPER}} ' . $selector => 'text-align: {{VALUE}};',
+				],
+				'default'   => 'left',
+			]
+		);
+		// Margin control
+		$this->add_responsive_control(
+			$name . '_margin',
+			[
+				'label'      => __( 'Margin', 'fractal' ),
+				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors'  => [
+					'{{WRAPPER}} ' . $selector => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+		// Padding control
+		$this->add_responsive_control(
+			$name . '_padding',
+			[
+				'label'      => __( 'Padding', 'fractal' ),
+				'type'       => \Elementor\Controls_Manager::DIMENSIONS,
+				'size_units' => [ 'px', '%', 'em' ],
+				'selectors'  => [
+					'{{WRAPPER}} ' . $selector => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+		$this->add_responsive_control(
+			$name . '_width',
+			[
+				'label'      => __( 'Width', 'fractal' ),
+				'type'       => \Elementor\Controls_Manager::SLIDER,
+				'size_units' => [ '%', 'px', 'vw' ],
+				'range'      => [
+					'%'  => [
+						'min' => 10,
+						'max' => 100,
+					],
+					'px' => [
+						'min' => 50,
+						'max' => 1200,
+					],
+					'vw' => [
+						'min' => 10,
+						'max' => 100,
+					],
+				],
+				'selectors'  => [
+					'{{WRAPPER}} ' . $selector => 'width: {{SIZE}}{{UNIT}};',
+				],
+				'default'    => [
+					'unit' => '%',
+					'size' => '',
+				],
+			]
+		);
 		$this->end_controls_section();
 	}
 
