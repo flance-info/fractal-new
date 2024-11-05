@@ -49,7 +49,7 @@ $description_tag = $settings['description_html_tag'] ?? 'div';
 						<div class="flex-1 flex flex-col items-start justify-start pt-1.5 px-0 pb-0 box-border gap-[26px] min-w-[528px] max-w-full mq925:min-w-[80%]">
 
 
-								<<?php echo esc_attr( $subtitle_tag ); ?> class="subtitle
+								<<?php echo esc_attr( $subtitle_tag ); ?> class="cursor-pointer subtitle
 							m-0 relative text-inherit tracking-[-0.01em]
 							 leading-[36px] font-bold font-[inherit] mq450:text-lg
 							  mq450:leading-[22px] mq925:text-5xl mq925:leading-[29px]
