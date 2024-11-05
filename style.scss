@@ -239,6 +239,10 @@ body .elementor .slides img {
 	margin-top: -80px
   }
   body {
+
+	.stm-img-2 {
+    max-width: 370px;
+}
 	.stm-email-text {
 	  padding-bottom: 70px;
 	}
@@ -277,7 +281,14 @@ body .elementor .slides img {
 
 @media (max-width: 600px) {
   body {
-
+	.starter-logo img {
+	  width: 130px;
+	  height: auto;
+	}
+  .elementor-widget-ourworks .work_title {
+        font-size: 38px;
+        line-height: 48px;
+    }
 	.stm-custom-post {
 	  .grid-cols-3 {
 		grid-template-columns: repeat(1, minmax(0, 1fr)) !important;

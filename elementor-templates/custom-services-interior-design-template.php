@@ -52,7 +52,7 @@ $description_tag = $settings['description_html_tag'] ?? 'div';
 		$post_image_hover_url = $post['post_image_hover']['url'] ?? \Elementor\Utils::get_placeholder_image_src();
 		$post_url             = $post['post_link']['url'] ?? "#";
 		?>
-		<div class="flex-1 overflow-hidden flex flex-col items-start justify-start gap-[30px] min-w-[277px] max-w-full  stm-hover-box">
+		<div class="flex-1 overflow-hidden flex flex-col items-start justify-start gap-[30px] min-w-[277px] max-w-full  stm-hover-box stm-img-<?php echo $index ?>">
 			<div class="stm-img img-gradient-hover-wrapper self-stretch flex flex-row items-start justify-start max-w-full">
 				<img decoding="async" class="img-gradient-hover h-60 flex-1 relative max-w-full overflow-hidden object-cover side-img" loading="lazy" alt="" src="<?php echo esc_url( $post_image_url ); ?>">
 			</div>
@@ -84,7 +84,7 @@ $description_tag = $settings['description_html_tag'] ?? 'div';
 	$post_image_hover_url = $post['post_image_hover']['url'] ?? \Elementor\Utils::get_placeholder_image_src();
 	?>
 
-	<div class="flex-1 overflow-hidden flex flex-col items-start justify-start gap-[30px] min-w-[277px] max-w-full  stm-hover-box max-w-370">
+	<div class="flex-1 overflow-hidden flex flex-col items-start justify-start gap-[30px] min-w-[277px] max-w-full  stm-hover-box max-w-370 stm-img-<?php echo $index ?>">
 		<div class="stm-img img-gradient-hover-wrapper self-stretch flex flex-row items-start justify-start max-w-full">
 				<img decoding="async" class="img-gradient-hover h-60 flex-1 relative max-w-full overflow-hidden object-cover side-img" loading="lazy" alt="" src="<?php echo esc_url( $post_image_url ); ?>">
 			</div>
