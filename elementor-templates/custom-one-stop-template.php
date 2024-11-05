@@ -21,8 +21,8 @@ $subtitle_tag = $settings['subtitle_html_tag'] ?? 'div';
 
 		?>
 			<?php if ( $index % 2 === 0 ) : ?>
-			<div class="max-w-[1170px] flex flex-row items-left w-full justify-start gap-[60px] w-full mq1400:gap-[30px] mq1400:flex-wrap">
-				<div class="flex-1 flex flex-col items-start justify-start gap-[30px] min-w-[361px] max-w-full mq450:min-w-full mq1400:flex-1">
+			<div class="max-w-[1170px] flex flex-row items-left w-full justify-start gap-[60px] w-full mq1400:gap-[30px] mq1400:flex-wrap stm-shop-<?php echo $index ?>">
+				<div class="flex-1 flex flex-col items-start justify-start gap-[30px] min-w-[361px] max-w-full mq450:min-w-full mq1400:flex-1 ">
 
 					<<?php echo esc_attr( $heading_tag ); ?> class="heading m-0 relative text-inherit
 					tracking-[-0.02em] leading-[54px] font-medium font-[inherit] mq450:text-10xl mq450:leading-[32px] mq925:text-19xl mq925:leading-[43px]">
@@ -47,7 +47,7 @@ $subtitle_tag = $settings['subtitle_html_tag'] ?? 'div';
 			</div>
 		<?php else: ?>
 			<div class="max-w-[1170px] flex flex-row items-left w-full justify-start gap-[60px] w-full
-			 text-right text-base text-general-white mq1400:gap-[30px] mq1400:flex-wrap">
+			 text-right text-base text-general-white mq1400:gap-[30px] mq1400:flex-wrap stm-shop-<?php echo $index ?>">
 				<div class="side-img h-[492px] flex-[0.8559] flex flex-col items-end justify-end p-10 box-border
 				 bg-cover
 				  bg-no-repeat bg-[top] min-w-[361px] max-w-full
