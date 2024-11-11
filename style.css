@@ -118,7 +118,13 @@ body .elementor .slides img {
   position: relative;
 }
 
-@media (max-width: 925px) {
+@media (max-width: 1100px) {
+  body .stm-brands {
+    flex-wrap: unset;
+    padding: 0 9px;
+  }
+}
+@media (max-width: 1030px) {
   body .stm-margin-top {
     margin-top: 130px !important;
   }

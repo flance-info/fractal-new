@@ -106,7 +106,7 @@ class OurBrands_Widget extends \Elementor\Widget_Base {
 		if ( ! empty( $settings['brands_list'] ) ) {
 			echo '<div class="w-full">';
 			echo '<section class="bg-general-white self-stretch flex flex-col items-center justify-center py-[98px]">';
-			echo '<div class="max-w-[1170px] w-full flex flex-wrap overflow-x-auto items-center justify-between gap-4 scroll-snap-x scroll-snap-start scroll-smooth ">';
+			echo '<div class="stm-brands max-w-[1170px] w-full flex flex-wrap overflow-x-auto items-center justify-between gap-4 scroll-snap-x scroll-snap-start scroll-smooth ">';
 			// Loop through each brand in the repeater
 			foreach ( $settings['brands_list'] as $item ) {
 				$brand_logo = isset( $item['brand_logo']['url'] ) ? esc_url( $item['brand_logo']['url'] ) : '';
@@ -127,7 +127,7 @@ class OurBrands_Widget extends \Elementor\Widget_Base {
 		if ( settings.brands_list.length ) { #>
 		<div class="w-full">
 			<section class="bg-general-white self-stretch flex flex-col items-center justify-center py-[98px]">
-				<div class="max-w-[1170px] w-full flex flex-wrap overflow-x-auto items-center justify-between gap-4 scroll-snap-x scroll-snap-start scroll-smooth ">
+				<div class="stm-brands max-w-[1170px] w-full flex flex-wrap overflow-x-auto items-center justify-between gap-4 scroll-snap-x scroll-snap-start scroll-smooth ">
 					<# _.each( settings.brands_list, function( item ) { #>
 					<img class="relative h-16" alt="{{ item.brand_name }}" src="{{ item.brand_logo.url }}">
 					<# }); #>

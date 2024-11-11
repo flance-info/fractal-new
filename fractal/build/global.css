@@ -3583,7 +3583,7 @@ form p, form span, form input {
   }
 }
 
-@media screen and (width <= 925px) {
+@media screen and (width <= 1030px) {
   .mq925\:relative {
     position: relative;
   }
