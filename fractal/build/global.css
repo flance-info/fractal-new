@@ -3393,16 +3393,8 @@ form p, form span, form input {
 
 @media (width <= 1024px) {
   .navigation .navigation-menu.active .menu {
-    visibility: visible;
-    opacity: 1;
-    background-color: #fff;
-    margin-top: 50px;
-    padding: 0 20px 20px;
-    transition: all .15s;
-    display: block;
-    position: absolute;
-    left: -15px;
-    right: -15px;
+
+
   }
 
   .navigation .navigation-menu.active .mobile-switcher {

@@ -122,19 +122,62 @@ body .elementor .slides img {
 
 @media (max-width: 1100px) {
 
-  body{
-	.stm-brands{
+  body {
+	.stm-brands {
 	  flex-wrap: unset;
-	      padding: 0 9px;
+	  padding: 0 9px;
 
 	}
   }
 }
+
 @media (max-width: 1030px) {
   body .stm-margin-top {
 	margin-top: 130px !important;
   }
+  body {
+	.navigation .navigation-menu
+	.menu {
+	  position: fixed;
 
+	  /* top: 0; */
+	  left: 0px; /* Start off-screen to the left */
+	  width: 300px; /* Set desired width of the sidebar */
+	  height: auto;
+	  background-color: #fff;
+
+	  transition: transform 0.3s ease, visibility 0s 0.3s, opacity 0.3s; /* Smooth slide-in effect */
+	  transform: translateX(-100%); /* Hide off-screen initially */
+	  visibility: hidden; /* Hidden by default */
+	  opacity: 0;
+	  z-index: 9999;
+	  margin-top: 77px;
+	  padding: 0px;
+	  display: block;
+	}
+
+	.navigation .navigation-menu .starter-menu > li > a {
+	  font-weight: var(--stm-lms-menu-link-font-weight);
+	  color: var(--stm-lms-menu-link-color);
+	  margin: 0;
+	  padding: 10px;
+	  text-decoration: none;
+	  transition: all .15s ease-in;
+	  display: block;
+	  position: relative;
+	  font-family: "Space Grotesk", Sans-serif;
+	  font-weight: 500;
+	}
+
+	.navigation .navigation-menu.active
+	.menu {
+	  transform: translateX(0); /* Slide in from the left */
+	  visibility: visible;
+	  opacity: 1;
+	  transition: transform 0.3s ease, visibility 0s 0s, opacity 0.3s; /* Smooth fade-in */
+
+	}
+  }
   header {
 	position: fixed;
 	width: 100%;
@@ -308,6 +351,9 @@ body .elementor .slides img {
 	  width: 130px;
 	  height: auto;
 	}
+	.navigation .navigation-menu .menu {
+	  margin-top: 63px;
+	}
 
 	.elementor-widget-ourworks .work_title {
 	  font-size: 38px;
@@ -358,20 +404,25 @@ body .elementor .slides img {
 		flex-direction: column-reverse;
 	  }
 	}
-	.m-w-100px{
+
+	.m-w-100px {
 	  min-width: 100px;
 	}
-	.stm-news{
+
+	.stm-news {
 	  display: block;
 	}
-	.stm-news-part{
+
+	.stm-news-part {
 	  display: inline;
 	}
-	.stm-flw-bl{
+
+	.stm-flw-bl {
 	  border-radius: 0px;
 	  justify-content: flex-start;
-	  .stm-flw-bl-txt{
-		    min-width: 100%;
+
+	  .stm-flw-bl-txt {
+		min-width: 100%;
 	  }
 	}
   }
