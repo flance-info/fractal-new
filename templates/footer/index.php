@@ -191,8 +191,8 @@ $current_url           = home_url( add_query_arg( null, null ) );
 				<div class="leading-[24px] relative"> Fractal is a Dubai-based leading interior design company dedicated to creating exceptional spaces (Home, Villa, Hotel fit out works, Offices, Commercial spaces, etc) that reflect
 					your unique taste.
 				</div>
-				<div class="flex flex-row font-button-space-grotesk gap-3.5 items-center justify-center mq925:flex-wrap overflow-hidden rounded-[20px] text-[20px] text-general-white">
-					<div class="font-medium leading-[26px] mq450:leading-[21px] mq450:text-base relative tracking-[-0.01em]"> Follow Us on Social Media</div>
+				<div class="flex flex-row font-button-space-grotesk gap-3.5 items-center justify-center mq925:flex-wrap overflow-hidden  text-[20px] text-general-white stm-flw-bl">
+					<div class="font-medium leading-[26px] mq450:leading-[21px] mq450:text-base relative tracking-[-0.01em] stm-flw-bl-txt"> Follow Us on Social Media</div>
 
 					<a href="<?php echo esc_url( $facebook_url ); ?>" target="_blank" rel="noopener noreferrer">
 						<div class="social-link border-[1px] border-gray-100 border-solid flex flex-col items-center justify-center overflow-hidden px-[11px] py-2.5 rounded-11xl">
@@ -239,8 +239,12 @@ $current_url           = home_url( add_query_arg( null, null ) );
 				<div class="flex flex-row font-button-space-grotesk items-start justify-start overflow-hidden self-stretch text-general-white"><h3
 							class="font-[inherit] font-medium leading-[30px] m-0 mq450:leading-[24px] mq450:text-lgi relative text-inherit tracking-[-0.01em]"> Subscribe to Our Newsletter </h3></div>
 				<div class="leading-[24px] relative text-sm"> Stay ahead in a rapidly changing world. Subscribe to Fractal Insights, our monthly look at the critical issues facing global businesses.</div>
-				<div class="flex flex-row gap-2.5 items-start justify-start max-w-full mq925:flex-wrap self-stretch"><input
-							class="[border:none] [outline:none] bg-general-1-secondary-variant box-border flex flex-1 flex-row font-body-b4-merriweather-13 h-11 items-start justify-start max-w-full min-w-[276px] px-[15px] py-2.5 text-gray-300 text-sm w-full"
+				<div class="flex flex-row gap-2.5 items-start justify-start max-w-full mq925:flex-wrap self-stretch">
+					<input
+							class="[border:none] [outline:none] bg-general-1-secondary-variant
+							 box-border flex flex-1 flex-row font-body-b4-merriweather-13 h-11
+							 items-start justify-start max-w-full min-w-[276px] px-[15px] py-2.5
+							 text-gray-300 text-sm w-full m-w-100px"
 							placeholder="Your email address" type="text">
 					<button class="[border:none] bg-general-1-primary cursor-pointer flex flex-row gap-[15px] items-start justify-start overflow-hidden px-[15px] py-0">
 						<div class="bg-general-1-primary-variant h-11 ml-[-135px] relative shrink-0 w-[120px]"></div>
@@ -249,11 +253,12 @@ $current_url           = home_url( add_query_arg( null, null ) );
 						</div>
 					</button>
 				</div>
-				<div class="flex flex-row gap-2.5 items-start justify-start max-w-full text-smi"><input class="h-[21px] m-0 w-5" type="checkbox">
-					<div class="flex flex-row gap-1 items-start justify-start max-w-[calc(100%_-_30px)] mq450:flex-wrap">
+				<div class="flex flex-row gap-2.5 items-start justify-start max-w-full text-smi">
+					<input class="h-[21px] m-0 w-5" type="checkbox">
+					<div class="flex flex-row gap-1 items-start justify-start max-w-[calc(100%_-_30px)] mq450:flex-wrap stm-news">
 						<div class="inline-block leading-[22px] min-w-[96px] relative"> I have read the</div>
 						<a class="[text-decoration:none] leading-[22px] relative text-general-white">Privacy Policy</a>
-						<div class="leading-[22px] relative"> and agree to its terms.</div>
+						<div class="leading-[22px] relative stm-news-part"> and agree to its terms.</div>
 					</div>
 				</div>
 			</div>

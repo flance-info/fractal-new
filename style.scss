@@ -270,7 +270,8 @@ body .elementor .slides img {
 
 	.elementor-widget-stm-oneshop {
 	  .side-img {
-		min-height: 300px;
+		min-height: 400px;
+		height: 400px;
 	  }
 
 	  .stm-shop-1, .stm-shop-3 {
@@ -344,6 +345,22 @@ body .elementor .slides img {
 	  .stm-shop-1, .stm-shop-3 {
 		display: flex;
 		flex-direction: column-reverse;
+	  }
+	}
+	.m-w-100px{
+	  min-width: 100px;
+	}
+	.stm-news{
+	  display: block;
+	}
+	.stm-news-part{
+	  display: inline;
+	}
+	.stm-flw-bl{
+	  border-radius: 0px;
+	  justify-content: flex-start;
+	  .stm-flw-bl-txt{
+		    min-width: 100%;
 	  }
 	}
   }

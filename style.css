@@ -219,7 +219,8 @@ body .elementor .slides img {
     font-size: 45px;
   }
   body .elementor-widget-stm-oneshop .side-img {
-    min-height: 300px;
+    min-height: 400px;
+    height: 400px;
   }
   body .elementor-widget-stm-oneshop .stm-shop-1, body .elementor-widget-stm-oneshop .stm-shop-3 {
     display: flex;
@@ -271,6 +272,22 @@ body .elementor .slides img {
   body .elementor-widget-stm-oneshop .stm-shop-1, body .elementor-widget-stm-oneshop .stm-shop-3 {
     display: flex;
     flex-direction: column-reverse;
+  }
+  body .m-w-100px {
+    min-width: 100px;
+  }
+  body .stm-news {
+    display: block;
+  }
+  body .stm-news-part {
+    display: inline;
+  }
+  body .stm-flw-bl {
+    border-radius: 0px;
+    justify-content: flex-start;
+  }
+  body .stm-flw-bl .stm-flw-bl-txt {
+    min-width: 100%;
   }
 }
 
